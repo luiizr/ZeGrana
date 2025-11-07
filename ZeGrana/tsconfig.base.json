@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ze-grana/libs": ["libs/src/index.ts"],
+      "@ze-grana/core": ["libs/src/core/src/index.ts"],
+      "@ze-grana/adapters": ["libs/src/adapters/src/index.ts"],
+      "@ze-grana/utils": ["libs/src/utils/src/index.ts"],
+      "@ze-grana/externals": ["libs/src/externals/src/index.ts"],
+      "@ze-grana/frontend": ["libs/src/frontend/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
