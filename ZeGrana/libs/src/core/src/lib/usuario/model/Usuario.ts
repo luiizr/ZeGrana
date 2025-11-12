@@ -1,3 +1,4 @@
+import Dashboard from "../../dashboard/model/Dashboard";
 import LifeControl from "../../lifeControl/model/lifeControl";
 
 export default interface Usuario {
@@ -10,7 +11,9 @@ export default interface Usuario {
     
     lifeControl: LifeControl;
     
-    dashboard: string; // cada usuário tem seu próprio dashboard, e o dashboard é quem conecta as informações bancárias do usuário
+    dashboard: Dashboard; // cada usuário tem seu próprio dashboard, e o dashboard é quem conecta as informações bancárias do usuário
+
+    permissoes: 
 
     // Informações financeiras
 
