@@ -10570,6 +10570,11 @@
     "type": "static"
   },
   {
+    "source": "npm:@types/bcrypt",
+    "target": "npm:@types/node",
+    "type": "static"
+  },
+  {
     "source": "npm:@types/body-parser",
     "target": "npm:@types/connect",
     "type": "static"
@@ -10596,6 +10601,16 @@
   },
   {
     "source": "npm:@types/connect-history-api-fallback",
+    "target": "npm:@types/node",
+    "type": "static"
+  },
+  {
+    "source": "npm:@types/cors",
+    "target": "npm:@types/node",
+    "type": "static"
+  },
+  {
+    "source": "npm:@types/dotenv",
     "target": "npm:@types/node",
     "type": "static"
   },
@@ -10722,6 +10737,16 @@
   {
     "source": "npm:parse5@7.3.0",
     "target": "npm:entities@6.0.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:@types/jsonwebtoken",
+    "target": "npm:@types/ms",
+    "type": "static"
+  },
+  {
+    "source": "npm:@types/jsonwebtoken",
+    "target": "npm:@types/node",
     "type": "static"
   },
   {
@@ -11867,6 +11892,16 @@
   {
     "source": "npm:basic-auth",
     "target": "npm:safe-buffer@5.1.2",
+    "type": "static"
+  },
+  {
+    "source": "npm:bcrypt",
+    "target": "npm:node-addon-api@8.5.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:bcrypt",
+    "target": "npm:node-gyp-build",
     "type": "static"
   },
   {
@@ -13791,7 +13826,7 @@
   },
   {
     "source": "npm:dotenv-expand",
-    "target": "npm:dotenv",
+    "target": "npm:dotenv@16.6.1",
     "type": "static"
   },
   {
@@ -13807,6 +13842,11 @@
   {
     "source": "npm:dunder-proto",
     "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:ecdsa-sig-formatter",
+    "target": "npm:safe-buffer",
     "type": "static"
   },
   {
@@ -21165,6 +21205,81 @@
     "type": "static"
   },
   {
+    "source": "npm:jsonwebtoken",
+    "target": "npm:jws",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsonwebtoken",
+    "target": "npm:lodash.includes",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsonwebtoken",
+    "target": "npm:lodash.isboolean",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsonwebtoken",
+    "target": "npm:lodash.isinteger",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsonwebtoken",
+    "target": "npm:lodash.isnumber",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsonwebtoken",
+    "target": "npm:lodash.isplainobject",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsonwebtoken",
+    "target": "npm:lodash.isstring",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsonwebtoken",
+    "target": "npm:lodash.once",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsonwebtoken",
+    "target": "npm:ms",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsonwebtoken",
+    "target": "npm:semver",
+    "type": "static"
+  },
+  {
+    "source": "npm:jwa",
+    "target": "npm:buffer-equal-constant-time",
+    "type": "static"
+  },
+  {
+    "source": "npm:jwa",
+    "target": "npm:ecdsa-sig-formatter",
+    "type": "static"
+  },
+  {
+    "source": "npm:jwa",
+    "target": "npm:safe-buffer",
+    "type": "static"
+  },
+  {
+    "source": "npm:jws",
+    "target": "npm:jwa",
+    "type": "static"
+  },
+  {
+    "source": "npm:jws",
+    "target": "npm:safe-buffer",
+    "type": "static"
+  },
+  {
     "source": "npm:keygrip",
     "target": "npm:tsscmp",
     "type": "static"
@@ -22241,7 +22356,7 @@
   },
   {
     "source": "npm:nx",
-    "target": "npm:dotenv",
+    "target": "npm:dotenv@16.4.7",
     "type": "static"
   },
   {
@@ -22845,6 +22960,111 @@
     "type": "static"
   },
   {
+    "source": "npm:pg",
+    "target": "npm:pg-connection-string",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg",
+    "target": "npm:pg-pool",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg",
+    "target": "npm:pg-protocol",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg",
+    "target": "npm:pg-types",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg",
+    "target": "npm:pgpass",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg",
+    "target": "npm:pg-cloudflare",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-cursor",
+    "target": "npm:pg",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-pool",
+    "target": "npm:pg",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-promise",
+    "target": "npm:pg-query-stream",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-promise",
+    "target": "npm:assert-options",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-promise",
+    "target": "npm:pg",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-promise",
+    "target": "npm:pg-minify",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-promise",
+    "target": "npm:spex",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-query-stream",
+    "target": "npm:pg",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-query-stream",
+    "target": "npm:pg-cursor",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-types",
+    "target": "npm:pg-int8",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-types",
+    "target": "npm:postgres-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-types",
+    "target": "npm:postgres-bytea",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-types",
+    "target": "npm:postgres-date",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-types",
+    "target": "npm:postgres-interval",
+    "type": "static"
+  },
+  {
+    "source": "npm:pgpass",
+    "target": "npm:split2",
+    "type": "static"
+  },
+  {
     "source": "npm:piscina",
     "target": "npm:@napi-rs/nice",
     "type": "static"
@@ -23392,6 +23612,11 @@
   {
     "source": "npm:postcss-unique-selectors",
     "target": "npm:postcss-selector-parser",
+    "type": "static"
+  },
+  {
+    "source": "npm:postgres-interval",
+    "target": "npm:xtend",
     "type": "static"
   },
   {

@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import ProvedorJwt from '../../../../adapters/src/providers/ProvedorJwt';
+import { ProvedorJwt } from '@ze-grana/adapters';
 
 export default class Jwt implements ProvedorJwt {
     constructor(private segredo: string) {}

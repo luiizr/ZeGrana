@@ -1,24 +1,25 @@
-import Financeiro from "../../belvo/Financeiro";
 import Dashboard from "../../dashboard/model/Dashboard";
-import LifeControl from "../../lifeControl/model/lifeControl";
 import PermissoesUsuario from "./PermissoesUsuario";
 
 export default interface Usuario {
-    id: string;
+    id?: string;
     email: string;
-    senha: string;
+    senha?: string;
     
     nome: string;
     idade: number;
     
-    lifeControl: LifeControl;
+    lifeControl?: {
+        createdAt?: Date;
+        updatedAt?: Date;
+    }
     
     // cada usuário tem seu próprio dashboard, e o dashboard é quem conecta as informações bancárias do usuário
-    dashboard: Dashboard; 
+    dashboard?: Dashboard; 
 
     // permissões do usuário
-    permissoes: PermissoesUsuario;
+    // permissoes: PermissoesUsuario;
 
-    financeiro: Financeiro;
+    // financeiro: Financeiro;
 
 }

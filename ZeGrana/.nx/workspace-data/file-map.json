@@ -49,90 +49,47 @@
   "fileMap": {
     "nonProjectFiles": [],
     "projectFileMap": {
-      "core": [
+      "frontend": [
         {
-          "file": "libs/src/core/README.md",
-          "hash": "9810432091555253122"
+          "file": "libs/src/frontend/README.md",
+          "hash": "2993768616696149238"
         },
         {
-          "file": "libs/src/core/eslint.config.mjs",
+          "file": "libs/src/frontend/eslint.config.mjs",
           "hash": "6219511726200060807",
           "deps": [
             "npm:@nx/eslint-plugin"
           ]
         },
         {
-          "file": "libs/src/core/jest.config.ts",
-          "hash": "9582925030231834620"
+          "file": "libs/src/frontend/jest.config.ts",
+          "hash": "3133064459555778379"
         },
         {
-          "file": "libs/src/core/project.json",
-          "hash": "15187980038710056470"
+          "file": "libs/src/frontend/project.json",
+          "hash": "10536508953227321232"
         },
         {
-          "file": "libs/src/core/src/index.ts",
-          "hash": "15653742790902011623"
+          "file": "libs/src/frontend/src/index.ts",
+          "hash": "3782854048387096129"
         },
         {
-          "file": "libs/src/core/src/lib/belvo/Financeiro.ts",
-          "hash": "15017671572785019221"
-        },
-        {
-          "file": "libs/src/core/src/lib/dashboard/model/Dashboard.ts",
-          "hash": "16127266886796736542"
-        },
-        {
-          "file": "libs/src/core/src/lib/lifeControl/model/lifeControl.ts",
-          "hash": "11817951864579894599"
-        },
-        {
-          "file": "libs/src/core/src/lib/usuario/model/PermissoesUsuario.ts",
-          "hash": "17967895677007169113"
-        },
-        {
-          "file": "libs/src/core/src/lib/usuario/model/Usuario.ts",
-          "hash": "17293583078827873320"
-        },
-        {
-          "file": "libs/src/core/src/lib/usuario/provider/repositorioUsuario.ts",
-          "hash": "6619468366926190698"
-        },
-        {
-          "file": "libs/src/core/src/lib/usuario/service/buscarUsuarioPorEmail.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "libs/src/core/src/lib/usuario/service/buscarUsuarioPorID.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "libs/src/core/src/lib/usuario/service/deletarUsuario.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "libs/src/core/src/lib/usuario/service/salvarUsuario.ts",
-          "hash": "13096289526062514260",
-          "deps": [
-            "utils"
-          ]
-        },
-        {
-          "file": "libs/src/core/src/test-setup.ts",
+          "file": "libs/src/frontend/src/test-setup.ts",
           "hash": "1917999429567095215",
           "deps": [
             "npm:jest-preset-angular"
           ]
         },
         {
-          "file": "libs/src/core/tsconfig.json",
+          "file": "libs/src/frontend/tsconfig.json",
           "hash": "7926296956335143092"
         },
         {
-          "file": "libs/src/core/tsconfig.lib.json",
+          "file": "libs/src/frontend/tsconfig.lib.json",
           "hash": "6020606002228403423"
         },
         {
-          "file": "libs/src/core/tsconfig.spec.json",
+          "file": "libs/src/frontend/tsconfig.spec.json",
           "hash": "13282830509091205533"
         }
       ],
@@ -186,48 +143,79 @@
           "hash": "14954872453723519891"
         }
       ],
-      "api": [
+      "externals": [
         {
-          "file": "apps/api/eslint.config.mjs",
-          "hash": "2624537849564014525"
+          "file": "libs/src/externals/README.md",
+          "hash": "17968949341009269485"
         },
         {
-          "file": "apps/api/jest.config.ts",
-          "hash": "11236996806909307999"
-        },
-        {
-          "file": "apps/api/project.json",
-          "hash": "5124865395107198207"
-        },
-        {
-          "file": "apps/api/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/api/src/main.ts",
-          "hash": "12937849036216155547",
+          "file": "libs/src/externals/eslint.config.mjs",
+          "hash": "6219511726200060807",
           "deps": [
-            "npm:express"
+            "npm:@nx/eslint-plugin"
           ]
         },
         {
-          "file": "apps/api/tsconfig.app.json",
-          "hash": "7882563681638815931"
+          "file": "libs/src/externals/jest.config.ts",
+          "hash": "17175054105133817351"
         },
         {
-          "file": "apps/api/tsconfig.json",
-          "hash": "3490524966360018312"
+          "file": "libs/src/externals/project.json",
+          "hash": "10161753133868457802"
         },
         {
-          "file": "apps/api/tsconfig.spec.json",
-          "hash": "6622138706846345436"
+          "file": "libs/src/externals/src/index.ts",
+          "hash": "8304568724492927799"
         },
         {
-          "file": "apps/api/webpack.config.js",
-          "hash": "16241762530454801359",
+          "file": "libs/src/externals/src/lib/auth/senhaCripto.ts",
+          "hash": "17031173780340502624",
           "deps": [
-            "npm:@nx/webpack"
+            "npm:bcrypt",
+            "adapters"
           ]
+        },
+        {
+          "file": "libs/src/externals/src/lib/db/postgres/RepositorioUsuarioPG.ts",
+          "hash": "14802135143149562236",
+          "deps": [
+            "adapters",
+            "npm:pg-promise"
+          ]
+        },
+        {
+          "file": "libs/src/externals/src/lib/db/postgres/db.ts",
+          "hash": "1904359793785040646",
+          "deps": [
+            "npm:pg-promise"
+          ]
+        },
+        {
+          "file": "libs/src/externals/src/lib/jwt/jwt.ts",
+          "hash": "6722283403454215531",
+          "deps": [
+            "npm:jsonwebtoken",
+            "adapters"
+          ]
+        },
+        {
+          "file": "libs/src/externals/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/src/externals/tsconfig.json",
+          "hash": "7926296956335143092"
+        },
+        {
+          "file": "libs/src/externals/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/src/externals/tsconfig.spec.json",
+          "hash": "13282830509091205533"
         }
       ],
       "@ze-grana/source": [
@@ -240,8 +228,36 @@
           "hash": "13471045435956725713"
         },
         {
-          "file": ".gitignore",
-          "hash": "15914021861741003285"
+          "file": ".nx/cache/run.json",
+          "hash": "9374236564685479390"
+        },
+        {
+          "file": ".nx/workspace-data/9c661c56-ac2f-49e1-abe2-ed555d4be75c.db-wal",
+          "hash": "9630643725805277222"
+        },
+        {
+          "file": ".nx/workspace-data/d/daemon.log",
+          "hash": "18272758823537105240"
+        },
+        {
+          "file": ".nx/workspace-data/eslint-2654242865465226088.hash",
+          "hash": "8092497608539420773"
+        },
+        {
+          "file": ".nx/workspace-data/lockfile-nodes.hash",
+          "hash": "17741753180827655433"
+        },
+        {
+          "file": ".nx/workspace-data/parsed-lock-file.nodes.json",
+          "hash": "6600150132380523854"
+        },
+        {
+          "file": ".nx/workspace-data/playwright-5186013267177752385.hash",
+          "hash": "15534498398578351847"
+        },
+        {
+          "file": ".nx/workspace-data/webpack-7566275343909617285.hash",
+          "hash": "2207946986473141180"
         },
         {
           "file": ".prettierignore",
@@ -299,11 +315,11 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "16536564172955356592"
+          "hash": "9695289513083011235"
         },
         {
           "file": "package.json",
-          "hash": "17808837594107648269",
+          "hash": "5801879266676253820",
           "deps": [
             "npm:@angular-devkit/core",
             "npm:@angular-devkit/schematics",
@@ -331,9 +347,14 @@
             "npm:@swc-node/register",
             "npm:@swc/core",
             "npm:@swc/helpers",
+            "npm:@types/bcrypt",
+            "npm:@types/cors",
+            "npm:@types/dotenv",
             "npm:@types/express",
             "npm:@types/jest",
+            "npm:@types/jsonwebtoken",
             "npm:@types/node",
+            "npm:@types/pg-promise",
             "npm:@types/uuid",
             "npm:@typescript-eslint/utils",
             "npm:angular-eslint",
@@ -362,7 +383,12 @@
             "npm:@angular/platform-browser-dynamic",
             "npm:@angular/router",
             "npm:axios",
+            "npm:bcrypt",
+            "npm:cors",
+            "npm:dotenv",
             "npm:express",
+            "npm:jsonwebtoken",
+            "npm:pg-promise",
             "npm:rxjs",
             "npm:uuid",
             "npm:zone.js"
@@ -371,6 +397,187 @@
         {
           "file": "tsconfig.base.json",
           "hash": "1967970020951307833"
+        }
+      ],
+      "api": [
+        {
+          "file": "apps/api/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/api/jest.config.ts",
+          "hash": "11236996806909307999"
+        },
+        {
+          "file": "apps/api/project.json",
+          "hash": "5124865395107198207"
+        },
+        {
+          "file": "apps/api/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "4382126482077440498",
+          "deps": [
+            "npm:dotenv",
+            "npm:express",
+            "npm:cors",
+            "externals"
+          ]
+        },
+        {
+          "file": "apps/api/tsconfig.app.json",
+          "hash": "7882563681638815931"
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "3490524966360018312"
+        },
+        {
+          "file": "apps/api/tsconfig.spec.json",
+          "hash": "6622138706846345436"
+        },
+        {
+          "file": "apps/api/webpack.config.js",
+          "hash": "16241762530454801359",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        }
+      ],
+      "adapters": [
+        {
+          "file": "libs/src/adapters/README.md",
+          "hash": "1764559921173388546"
+        },
+        {
+          "file": "libs/src/adapters/eslint.config.mjs",
+          "hash": "6219511726200060807",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/src/adapters/jest.config.ts",
+          "hash": "6533944646393021702"
+        },
+        {
+          "file": "libs/src/adapters/project.json",
+          "hash": "8837570686186791940"
+        },
+        {
+          "file": "libs/src/adapters/src/index.ts",
+          "hash": "17352536658892443348"
+        },
+        {
+          "file": "libs/src/adapters/src/lib/db/ColecaoUsuario.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/src/adapters/src/lib/dto/UsuarioDTO.ts",
+          "hash": "3410578326272721772",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "libs/src/adapters/src/lib/dto/index.ts",
+          "hash": "8426618849365320741"
+        },
+        {
+          "file": "libs/src/adapters/src/lib/providers/ProvedorCriptografia.ts",
+          "hash": "17592941666420914527"
+        },
+        {
+          "file": "libs/src/adapters/src/lib/providers/ProvedorDados.ts",
+          "hash": "15042691132303432119"
+        },
+        {
+          "file": "libs/src/adapters/src/lib/providers/ProvedorJwt.ts",
+          "hash": "12964193869645984250"
+        },
+        {
+          "file": "libs/src/adapters/src/lib/providers/ProvedorRequisicoes.ts",
+          "hash": "14335092428764910906"
+        },
+        {
+          "file": "libs/src/adapters/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/src/adapters/tsconfig.json",
+          "hash": "7926296956335143092"
+        },
+        {
+          "file": "libs/src/adapters/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/src/adapters/tsconfig.spec.json",
+          "hash": "13282830509091205533"
+        }
+      ],
+      "utils": [
+        {
+          "file": "libs/src/utils/README.md",
+          "hash": "7928633615893668067"
+        },
+        {
+          "file": "libs/src/utils/eslint.config.mjs",
+          "hash": "6219511726200060807",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/src/utils/jest.config.ts",
+          "hash": "1206778783568744907"
+        },
+        {
+          "file": "libs/src/utils/project.json",
+          "hash": "3505237076568380482"
+        },
+        {
+          "file": "libs/src/utils/src/index.ts",
+          "hash": "5357084891275657201"
+        },
+        {
+          "file": "libs/src/utils/src/lib/CasoDeUso.ts",
+          "hash": "1023113229430893751"
+        },
+        {
+          "file": "libs/src/utils/src/lib/Erro.ts",
+          "hash": "510626353583134123"
+        },
+        {
+          "file": "libs/src/utils/src/lib/Id.ts",
+          "hash": "1536411502090587115",
+          "deps": [
+            "npm:uuid"
+          ]
+        },
+        {
+          "file": "libs/src/utils/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/src/utils/tsconfig.json",
+          "hash": "7926296956335143092"
+        },
+        {
+          "file": "libs/src/utils/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/src/utils/tsconfig.spec.json",
+          "hash": "13282830509091205533"
         }
       ],
       "ZeGrana": [
@@ -474,6 +681,39 @@
           "hash": "5331518322626158299"
         }
       ],
+      "ZeGrana-e2e": [
+        {
+          "file": "apps/ZeGrana-e2e/eslint.config.mjs",
+          "hash": "1172734138943286526",
+          "deps": [
+            "npm:eslint-plugin-playwright"
+          ]
+        },
+        {
+          "file": "apps/ZeGrana-e2e/playwright.config.ts",
+          "hash": "17607043298388780945",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/ZeGrana-e2e/project.json",
+          "hash": "12924977212390774785"
+        },
+        {
+          "file": "apps/ZeGrana-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/ZeGrana-e2e/tsconfig.json",
+          "hash": "15726545290547512047"
+        }
+      ],
       "libs": [
         {
           "file": "libs/README.md",
@@ -528,6 +768,10 @@
           ]
         },
         {
+          "file": "libs/src/scripts/db.sql",
+          "hash": "350312459319841090"
+        },
+        {
           "file": "libs/src/test-setup.ts",
           "hash": "1917999429567095215",
           "deps": [
@@ -547,297 +791,94 @@
           "hash": "1029128818174064697"
         }
       ],
-      "ZeGrana-e2e": [
+      "core": [
         {
-          "file": "apps/ZeGrana-e2e/eslint.config.mjs",
-          "hash": "1172734138943286526",
-          "deps": [
-            "npm:eslint-plugin-playwright"
-          ]
+          "file": "libs/src/core/README.md",
+          "hash": "9810432091555253122"
         },
         {
-          "file": "apps/ZeGrana-e2e/playwright.config.ts",
-          "hash": "17607043298388780945",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/ZeGrana-e2e/project.json",
-          "hash": "12924977212390774785"
-        },
-        {
-          "file": "apps/ZeGrana-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        },
-        {
-          "file": "apps/ZeGrana-e2e/tsconfig.json",
-          "hash": "15726545290547512047"
-        }
-      ],
-      "adapters": [
-        {
-          "file": "libs/src/adapters/README.md",
-          "hash": "1764559921173388546"
-        },
-        {
-          "file": "libs/src/adapters/eslint.config.mjs",
+          "file": "libs/src/core/eslint.config.mjs",
           "hash": "6219511726200060807",
           "deps": [
             "npm:@nx/eslint-plugin"
           ]
         },
         {
-          "file": "libs/src/adapters/jest.config.ts",
-          "hash": "6533944646393021702"
+          "file": "libs/src/core/jest.config.ts",
+          "hash": "9582925030231834620"
         },
         {
-          "file": "libs/src/adapters/project.json",
-          "hash": "8837570686186791940"
+          "file": "libs/src/core/project.json",
+          "hash": "15187980038710056470"
         },
         {
-          "file": "libs/src/adapters/src/index.ts",
-          "hash": "1749279297624677836"
+          "file": "libs/src/core/src/index.ts",
+          "hash": "3405147424604302634"
         },
         {
-          "file": "libs/src/adapters/src/lib/adapters/adapters.css",
+          "file": "libs/src/core/src/lib/belvo/Financeiro.ts",
+          "hash": "15017671572785019221"
+        },
+        {
+          "file": "libs/src/core/src/lib/dashboard/model/Dashboard.ts",
+          "hash": "16127266886796736542"
+        },
+        {
+          "file": "libs/src/core/src/lib/lifeControl/model/lifeControl.ts",
+          "hash": "11817951864579894599"
+        },
+        {
+          "file": "libs/src/core/src/lib/usuario/model/PermissoesUsuario.ts",
+          "hash": "17967895677007169113"
+        },
+        {
+          "file": "libs/src/core/src/lib/usuario/model/Usuario.ts",
+          "hash": "17293583078827873320"
+        },
+        {
+          "file": "libs/src/core/src/lib/usuario/provider/repositorioUsuario.ts",
+          "hash": "6619468366926190698"
+        },
+        {
+          "file": "libs/src/core/src/lib/usuario/service/buscarUsuarioPorEmail.ts",
           "hash": "3244421341483603138"
         },
         {
-          "file": "libs/src/adapters/src/lib/adapters/adapters.html",
-          "hash": "13006300945256154297"
-        },
-        {
-          "file": "libs/src/adapters/src/lib/adapters/adapters.spec.ts",
-          "hash": "13387692013174334687",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "libs/src/adapters/src/lib/adapters/adapters.ts",
-          "hash": "11815974768459405146",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "libs/src/adapters/src/test-setup.ts",
-          "hash": "1917999429567095215",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "libs/src/adapters/tsconfig.json",
-          "hash": "7926296956335143092"
-        },
-        {
-          "file": "libs/src/adapters/tsconfig.lib.json",
-          "hash": "6020606002228403423"
-        },
-        {
-          "file": "libs/src/adapters/tsconfig.spec.json",
-          "hash": "13282830509091205533"
-        }
-      ],
-      "utils": [
-        {
-          "file": "libs/src/utils/README.md",
-          "hash": "7928633615893668067"
-        },
-        {
-          "file": "libs/src/utils/eslint.config.mjs",
-          "hash": "6219511726200060807",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "libs/src/utils/jest.config.ts",
-          "hash": "1206778783568744907"
-        },
-        {
-          "file": "libs/src/utils/project.json",
-          "hash": "3505237076568380482"
-        },
-        {
-          "file": "libs/src/utils/src/index.ts",
-          "hash": "5357084891275657201"
-        },
-        {
-          "file": "libs/src/utils/src/lib/CasoDeUso.ts",
-          "hash": "1023113229430893751"
-        },
-        {
-          "file": "libs/src/utils/src/lib/Erro.ts",
-          "hash": "510626353583134123"
-        },
-        {
-          "file": "libs/src/utils/src/lib/Id.ts",
-          "hash": "1536411502090587115",
-          "deps": [
-            "npm:uuid"
-          ]
-        },
-        {
-          "file": "libs/src/utils/src/test-setup.ts",
-          "hash": "1917999429567095215",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "libs/src/utils/tsconfig.json",
-          "hash": "7926296956335143092"
-        },
-        {
-          "file": "libs/src/utils/tsconfig.lib.json",
-          "hash": "6020606002228403423"
-        },
-        {
-          "file": "libs/src/utils/tsconfig.spec.json",
-          "hash": "13282830509091205533"
-        }
-      ],
-      "externals": [
-        {
-          "file": "libs/src/externals/README.md",
-          "hash": "17968949341009269485"
-        },
-        {
-          "file": "libs/src/externals/eslint.config.mjs",
-          "hash": "6219511726200060807",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "libs/src/externals/jest.config.ts",
-          "hash": "17175054105133817351"
-        },
-        {
-          "file": "libs/src/externals/project.json",
-          "hash": "10161753133868457802"
-        },
-        {
-          "file": "libs/src/externals/src/index.ts",
-          "hash": "11778141973894721840"
-        },
-        {
-          "file": "libs/src/externals/src/lib/externals/externals.css",
+          "file": "libs/src/core/src/lib/usuario/service/buscarUsuarioPorID.ts",
           "hash": "3244421341483603138"
         },
         {
-          "file": "libs/src/externals/src/lib/externals/externals.html",
-          "hash": "12905732825732900266"
-        },
-        {
-          "file": "libs/src/externals/src/lib/externals/externals.spec.ts",
-          "hash": "6837418928164067600",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "libs/src/externals/src/lib/externals/externals.ts",
-          "hash": "10199024691175921533",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "libs/src/externals/src/test-setup.ts",
-          "hash": "1917999429567095215",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "libs/src/externals/tsconfig.json",
-          "hash": "7926296956335143092"
-        },
-        {
-          "file": "libs/src/externals/tsconfig.lib.json",
-          "hash": "6020606002228403423"
-        },
-        {
-          "file": "libs/src/externals/tsconfig.spec.json",
-          "hash": "13282830509091205533"
-        }
-      ],
-      "frontend": [
-        {
-          "file": "libs/src/frontend/README.md",
-          "hash": "2993768616696149238"
-        },
-        {
-          "file": "libs/src/frontend/eslint.config.mjs",
-          "hash": "6219511726200060807",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "libs/src/frontend/jest.config.ts",
-          "hash": "3133064459555778379"
-        },
-        {
-          "file": "libs/src/frontend/project.json",
-          "hash": "10536508953227321232"
-        },
-        {
-          "file": "libs/src/frontend/src/index.ts",
-          "hash": "3782854048387096129"
-        },
-        {
-          "file": "libs/src/frontend/src/lib/frontend/frontend.css",
+          "file": "libs/src/core/src/lib/usuario/service/deletarUsuario.ts",
           "hash": "3244421341483603138"
         },
         {
-          "file": "libs/src/frontend/src/lib/frontend/frontend.html",
-          "hash": "15602620819534042169"
-        },
-        {
-          "file": "libs/src/frontend/src/lib/frontend/frontend.spec.ts",
-          "hash": "1298741227178668411",
+          "file": "libs/src/core/src/lib/usuario/service/salvarUsuario.ts",
+          "hash": "13096289526062514260",
           "deps": [
-            "npm:@angular/core"
+            "utils"
           ]
         },
         {
-          "file": "libs/src/frontend/src/lib/frontend/frontend.ts",
-          "hash": "5083101832745856884",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "libs/src/frontend/src/test-setup.ts",
+          "file": "libs/src/core/src/test-setup.ts",
           "hash": "1917999429567095215",
           "deps": [
             "npm:jest-preset-angular"
           ]
         },
         {
-          "file": "libs/src/frontend/tsconfig.json",
+          "file": "libs/src/core/tsconfig.json",
           "hash": "7926296956335143092"
         },
         {
-          "file": "libs/src/frontend/tsconfig.lib.json",
+          "file": "libs/src/core/tsconfig.lib.json",
           "hash": "6020606002228403423"
         },
         {
-          "file": "libs/src/frontend/tsconfig.spec.json",
+          "file": "libs/src/core/tsconfig.spec.json",
           "hash": "13282830509091205533"
         }
       ]
     }
   },
-  "externalNodesHash": "3129513085255343654"
+  "externalNodesHash": "17069823041862264055"
 }

@@ -15,3 +15,4 @@ export type {
 } from './lib/providers/ProvedorDados';
 export type { default as ProvedorCriptografia } from './lib/providers/ProvedorCriptografia';
 export type { default as ProvedorRequisicoes } from './lib/providers/ProvedorRequisicoes';
+export type { default as ProvedorJwt } from './lib/providers/ProvedorJwt';
