@@ -496,6 +496,11 @@
   },
   {
     "source": "npm:@angular/build",
+    "target": "npm:tailwindcss",
+    "type": "static"
+  },
+  {
+    "source": "npm:@angular/build",
     "target": "npm:tslib",
     "type": "static"
   },
@@ -902,6 +907,11 @@
   {
     "source": "npm:vite@7.1.11",
     "target": "npm:less",
+    "type": "static"
+  },
+  {
+    "source": "npm:vite@7.1.11",
+    "target": "npm:lightningcss",
     "type": "static"
   },
   {
@@ -7266,16 +7276,6 @@
   },
   {
     "source": "npm:@module-federation/data-prefetch",
-    "target": "npm:react",
-    "type": "static"
-  },
-  {
-    "source": "npm:@module-federation/data-prefetch",
-    "target": "npm:react-dom",
-    "type": "static"
-  },
-  {
-    "source": "npm:@module-federation/data-prefetch",
     "target": "npm:@module-federation/runtime",
     "type": "static"
   },
@@ -7501,16 +7501,6 @@
   },
   {
     "source": "npm:@module-federation/node",
-    "target": "npm:react",
-    "type": "static"
-  },
-  {
-    "source": "npm:@module-federation/node",
-    "target": "npm:react-dom",
-    "type": "static"
-  },
-  {
-    "source": "npm:@module-federation/node",
     "target": "npm:webpack",
     "type": "static"
   },
@@ -7582,16 +7572,6 @@
   {
     "source": "npm:@module-federation/cli@0.21.3",
     "target": "npm:commander",
-    "type": "static"
-  },
-  {
-    "source": "npm:@module-federation/data-prefetch@0.21.3",
-    "target": "npm:react",
-    "type": "static"
-  },
-  {
-    "source": "npm:@module-federation/data-prefetch@0.21.3",
-    "target": "npm:react-dom",
     "type": "static"
   },
   {
@@ -9785,6 +9765,21 @@
     "type": "static"
   },
   {
+    "source": "npm:@primeuix/styled",
+    "target": "npm:@primeuix/utils",
+    "type": "static"
+  },
+  {
+    "source": "npm:@primeuix/styles",
+    "target": "npm:@primeuix/styled",
+    "type": "static"
+  },
+  {
+    "source": "npm:@primeuix/themes",
+    "target": "npm:@primeuix/styled",
+    "type": "static"
+  },
+  {
     "source": "npm:@rspack/binding",
     "target": "npm:@rspack/binding-darwin-arm64",
     "type": "static"
@@ -10502,6 +10497,161 @@
   {
     "source": "npm:@swc/types",
     "target": "npm:@swc/counter",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/node",
+    "target": "npm:@jridgewell/remapping",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/node",
+    "target": "npm:enhanced-resolve",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/node",
+    "target": "npm:jiti",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/node",
+    "target": "npm:lightningcss",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/node",
+    "target": "npm:magic-string@0.30.21",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/node",
+    "target": "npm:source-map-js",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/node",
+    "target": "npm:tailwindcss@4.1.17",
+    "type": "static"
+  },
+  {
+    "source": "npm:magic-string@0.30.21",
+    "target": "npm:@jridgewell/sourcemap-codec",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-android-arm64",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-darwin-arm64",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-darwin-x64",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-freebsd-x64",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-linux-arm-gnueabihf",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-linux-arm64-gnu",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-linux-arm64-musl",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-linux-x64-gnu",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-linux-x64-musl",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-wasm32-wasi",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-win32-arm64-msvc",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide",
+    "target": "npm:@tailwindcss/oxide-win32-x64-msvc",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide-wasm32-wasi",
+    "target": "npm:@emnapi/core",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide-wasm32-wasi",
+    "target": "npm:@emnapi/runtime",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide-wasm32-wasi",
+    "target": "npm:@emnapi/wasi-threads",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide-wasm32-wasi",
+    "target": "npm:@napi-rs/wasm-runtime",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide-wasm32-wasi",
+    "target": "npm:@tybys/wasm-util",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/oxide-wasm32-wasi",
+    "target": "npm:tslib",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/postcss",
+    "target": "npm:@alloc/quick-lru",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/postcss",
+    "target": "npm:@tailwindcss/node",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/postcss",
+    "target": "npm:@tailwindcss/oxide",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/postcss",
+    "target": "npm:postcss",
+    "type": "static"
+  },
+  {
+    "source": "npm:@tailwindcss/postcss",
+    "target": "npm:tailwindcss@4.1.17",
     "type": "static"
   },
   {
@@ -21495,6 +21645,66 @@
     "type": "static"
   },
   {
+    "source": "npm:lightningcss",
+    "target": "npm:detect-libc@2.1.2",
+    "type": "static"
+  },
+  {
+    "source": "npm:lightningcss",
+    "target": "npm:lightningcss-android-arm64",
+    "type": "static"
+  },
+  {
+    "source": "npm:lightningcss",
+    "target": "npm:lightningcss-darwin-arm64",
+    "type": "static"
+  },
+  {
+    "source": "npm:lightningcss",
+    "target": "npm:lightningcss-darwin-x64",
+    "type": "static"
+  },
+  {
+    "source": "npm:lightningcss",
+    "target": "npm:lightningcss-freebsd-x64",
+    "type": "static"
+  },
+  {
+    "source": "npm:lightningcss",
+    "target": "npm:lightningcss-linux-arm-gnueabihf",
+    "type": "static"
+  },
+  {
+    "source": "npm:lightningcss",
+    "target": "npm:lightningcss-linux-arm64-gnu",
+    "type": "static"
+  },
+  {
+    "source": "npm:lightningcss",
+    "target": "npm:lightningcss-linux-arm64-musl",
+    "type": "static"
+  },
+  {
+    "source": "npm:lightningcss",
+    "target": "npm:lightningcss-linux-x64-gnu",
+    "type": "static"
+  },
+  {
+    "source": "npm:lightningcss",
+    "target": "npm:lightningcss-linux-x64-musl",
+    "type": "static"
+  },
+  {
+    "source": "npm:lightningcss",
+    "target": "npm:lightningcss-win32-arm64-msvc",
+    "type": "static"
+  },
+  {
+    "source": "npm:lightningcss",
+    "target": "npm:lightningcss-win32-x64-msvc",
+    "type": "static"
+  },
+  {
     "source": "npm:listr2",
     "target": "npm:cli-truncate",
     "type": "static"
@@ -22002,6 +22212,21 @@
   {
     "source": "npm:multicast-dns",
     "target": "npm:thunky",
+    "type": "static"
+  },
+  {
+    "source": "npm:mz",
+    "target": "npm:any-promise",
+    "type": "static"
+  },
+  {
+    "source": "npm:mz",
+    "target": "npm:object-assign",
+    "type": "static"
+  },
+  {
+    "source": "npm:mz",
+    "target": "npm:thenify-all",
     "type": "static"
   },
   {
@@ -22990,18 +23215,8 @@
     "type": "static"
   },
   {
-    "source": "npm:pg-cursor",
-    "target": "npm:pg",
-    "type": "static"
-  },
-  {
     "source": "npm:pg-pool",
     "target": "npm:pg",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg-promise",
-    "target": "npm:pg-query-stream",
     "type": "static"
   },
   {
@@ -23022,16 +23237,6 @@
   {
     "source": "npm:pg-promise",
     "target": "npm:spex",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg-query-stream",
-    "target": "npm:pg",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg-query-stream",
-    "target": "npm:pg-cursor",
     "type": "static"
   },
   {
@@ -23227,6 +23432,16 @@
   {
     "source": "npm:postcss-import",
     "target": "npm:resolve",
+    "type": "static"
+  },
+  {
+    "source": "npm:postcss-js",
+    "target": "npm:postcss",
+    "type": "static"
+  },
+  {
+    "source": "npm:postcss-js",
+    "target": "npm:camelcase-css",
     "type": "static"
   },
   {
@@ -23450,6 +23665,16 @@
     "type": "static"
   },
   {
+    "source": "npm:postcss-nested",
+    "target": "npm:postcss",
+    "type": "static"
+  },
+  {
+    "source": "npm:postcss-nested",
+    "target": "npm:postcss-selector-parser",
+    "type": "static"
+  },
+  {
     "source": "npm:postcss-normalize-charset",
     "target": "npm:postcss",
     "type": "static"
@@ -23640,6 +23865,56 @@
     "type": "static"
   },
   {
+    "source": "npm:primeng",
+    "target": "npm:@angular/common",
+    "type": "static"
+  },
+  {
+    "source": "npm:primeng",
+    "target": "npm:@angular/core",
+    "type": "static"
+  },
+  {
+    "source": "npm:primeng",
+    "target": "npm:@angular/forms",
+    "type": "static"
+  },
+  {
+    "source": "npm:primeng",
+    "target": "npm:@angular/platform-browser",
+    "type": "static"
+  },
+  {
+    "source": "npm:primeng",
+    "target": "npm:@angular/router",
+    "type": "static"
+  },
+  {
+    "source": "npm:primeng",
+    "target": "npm:rxjs",
+    "type": "static"
+  },
+  {
+    "source": "npm:primeng",
+    "target": "npm:@primeuix/styled",
+    "type": "static"
+  },
+  {
+    "source": "npm:primeng",
+    "target": "npm:@primeuix/styles",
+    "type": "static"
+  },
+  {
+    "source": "npm:primeng",
+    "target": "npm:@primeuix/utils",
+    "type": "static"
+  },
+  {
+    "source": "npm:primeng",
+    "target": "npm:tslib",
+    "type": "static"
+  },
+  {
     "source": "npm:promise-retry",
     "target": "npm:err-code",
     "type": "static"
@@ -23707,16 +23982,6 @@
   {
     "source": "npm:iconv-lite@0.4.24",
     "target": "npm:safer-buffer",
-    "type": "static"
-  },
-  {
-    "source": "npm:react-dom",
-    "target": "npm:react",
-    "type": "static"
-  },
-  {
-    "source": "npm:react-dom",
-    "target": "npm:scheduler",
     "type": "static"
   },
   {
@@ -24770,6 +25035,41 @@
     "type": "static"
   },
   {
+    "source": "npm:sucrase",
+    "target": "npm:@jridgewell/gen-mapping",
+    "type": "static"
+  },
+  {
+    "source": "npm:sucrase",
+    "target": "npm:commander@4.1.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:sucrase",
+    "target": "npm:lines-and-columns@1.2.4",
+    "type": "static"
+  },
+  {
+    "source": "npm:sucrase",
+    "target": "npm:mz",
+    "type": "static"
+  },
+  {
+    "source": "npm:sucrase",
+    "target": "npm:pirates",
+    "type": "static"
+  },
+  {
+    "source": "npm:sucrase",
+    "target": "npm:tinyglobby",
+    "type": "static"
+  },
+  {
+    "source": "npm:sucrase",
+    "target": "npm:ts-interface-checker",
+    "type": "static"
+  },
+  {
     "source": "npm:supports-color",
     "target": "npm:has-flag",
     "type": "static"
@@ -24817,6 +25117,206 @@
   {
     "source": "npm:synckit",
     "target": "npm:@pkgr/core",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:@alloc/quick-lru",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:arg@5.0.2",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:chokidar@3.6.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:didyoumean",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:dlv",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:fast-glob",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:glob-parent@6.0.2",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:is-glob",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:jiti@1.21.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:lilconfig",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:micromatch",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:normalize-path",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:object-hash",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:picocolors",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:postcss",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:postcss-import@15.1.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:postcss-js",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:postcss-load-config@6.0.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:postcss-nested",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:postcss-selector-parser",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:resolve",
+    "type": "static"
+  },
+  {
+    "source": "npm:tailwindcss",
+    "target": "npm:sucrase",
+    "type": "static"
+  },
+  {
+    "source": "npm:chokidar@3.6.0",
+    "target": "npm:anymatch",
+    "type": "static"
+  },
+  {
+    "source": "npm:chokidar@3.6.0",
+    "target": "npm:braces",
+    "type": "static"
+  },
+  {
+    "source": "npm:chokidar@3.6.0",
+    "target": "npm:glob-parent",
+    "type": "static"
+  },
+  {
+    "source": "npm:chokidar@3.6.0",
+    "target": "npm:is-binary-path",
+    "type": "static"
+  },
+  {
+    "source": "npm:chokidar@3.6.0",
+    "target": "npm:is-glob",
+    "type": "static"
+  },
+  {
+    "source": "npm:chokidar@3.6.0",
+    "target": "npm:normalize-path",
+    "type": "static"
+  },
+  {
+    "source": "npm:chokidar@3.6.0",
+    "target": "npm:readdirp@3.6.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:chokidar@3.6.0",
+    "target": "npm:fsevents",
+    "type": "static"
+  },
+  {
+    "source": "npm:glob-parent",
+    "target": "npm:is-glob",
+    "type": "static"
+  },
+  {
+    "source": "npm:glob-parent@6.0.2",
+    "target": "npm:is-glob",
+    "type": "static"
+  },
+  {
+    "source": "npm:postcss-import@15.1.0",
+    "target": "npm:postcss",
+    "type": "static"
+  },
+  {
+    "source": "npm:postcss-import@15.1.0",
+    "target": "npm:postcss-value-parser",
+    "type": "static"
+  },
+  {
+    "source": "npm:postcss-import@15.1.0",
+    "target": "npm:read-cache",
+    "type": "static"
+  },
+  {
+    "source": "npm:postcss-import@15.1.0",
+    "target": "npm:resolve",
+    "type": "static"
+  },
+  {
+    "source": "npm:postcss-load-config@6.0.1",
+    "target": "npm:jiti@1.21.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:postcss-load-config@6.0.1",
+    "target": "npm:postcss",
+    "type": "static"
+  },
+  {
+    "source": "npm:postcss-load-config@6.0.1",
+    "target": "npm:lilconfig",
+    "type": "static"
+  },
+  {
+    "source": "npm:readdirp@3.6.0",
+    "target": "npm:picomatch@2.3.1",
     "type": "static"
   },
   {
@@ -25052,6 +25552,16 @@
   {
     "source": "npm:minimatch@3.1.2",
     "target": "npm:brace-expansion@1.1.12",
+    "type": "static"
+  },
+  {
+    "source": "npm:thenify",
+    "target": "npm:any-promise",
+    "type": "static"
+  },
+  {
+    "source": "npm:thenify-all",
+    "target": "npm:thenify",
     "type": "static"
   },
   {

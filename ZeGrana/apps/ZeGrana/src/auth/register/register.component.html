@@ -1,0 +1,30 @@
+<div class="auth-root">
+  <p-card class="auth-card">
+    <ng-template pTemplate="header">
+      <h2 class="title">Criar conta</h2>
+      <p class="subtitle">Comece a organizar suas finanças</p>
+    </ng-template>
+
+    <form (ngSubmit)="onSubmit()" class="form">
+      <label for="name" class="p-mb-2">Nome</label>
+      <input id="name" pInputText type="text" [(ngModel)]="name" name="name" placeholder="Seu nome" />
+
+      <label for="email" class="p-mt-3 p-mb-2">E-mail</label>
+      <input id="email" pInputText type="email" [(ngModel)]="email" name="email" placeholder="seu@exemplo.com" />
+
+      <label for="password" class="p-mt-3 p-mb-2">Senha</label>
+      <p-password id="password" [(ngModel)]="password" name="password" feedback="false"></p-password>
+
+      <label for="confirm" class="p-mt-3 p-mb-2">Confirme a senha</label>
+      <p-password id="confirm" [(ngModel)]="confirm" name="confirm" feedback="false"></p-password>
+
+      <button pButton type="submit" class="p-mt-4 p-button-rounded p-button-secondary">Criar conta</button>
+    </form>
+
+    <ng-template pTemplate="footer">
+      <div class="footer">
+        <a routerLink="/" class="link">Voltar para login</a>
+      </div>
+    </ng-template>
+  </p-card>
+</div>
