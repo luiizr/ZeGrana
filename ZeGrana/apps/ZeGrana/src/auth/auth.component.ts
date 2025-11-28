@@ -12,5 +12,5 @@ import { RegisterComponent } from './register/register.component';
   styleUrls: ['./auth.component.scss'],
 })
 export class AuthComponent {
-  teste = false;
+  teste = true;
 }

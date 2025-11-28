@@ -38800,5 +38800,2500 @@
   "7866705706679400165": {},
   "9878759223545961072": {},
   "2981345084396713751": {},
-  "6587568836563038356": {}
+  "6587568836563038356": {},
+  "16927830414607654066": {
+    "apps/ZeGrana": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/ZeGrana"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/ZeGrana/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "9852668527401841481": {
+    "apps/ZeGrana-e2e": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/ZeGrana-e2e"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/ZeGrana-e2e/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "14620587761514503991": {
+    "apps/api": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/api"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/api/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "4732079619313574656": {
+    "apps/api-e2e": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/api-e2e"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/api-e2e/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "9636981093500927987": {
+    "libs": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "15701155908583934656": {
+    "libs/src/adapters": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/adapters"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/adapters/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "11915751225737028719": {
+    "libs/src/core": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/core"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/core/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "10454677840155755913": {
+    "libs/src/externals": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/externals"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/externals/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "8731155033318320690": {
+    "libs/src/frontend": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/frontend"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/frontend/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "1538597885430691930": {
+    "libs/src/utils": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/utils"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/utils/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "13487759948853603274": {},
+  "1627496498194525229": {},
+  "15767103539252737801": {},
+  "13547875398161640494": {},
+  "4229490409006717070": {},
+  "12947404074115758669": {},
+  "3493219817950243782": {},
+  "1656624841870728440": {
+    ".nx/cache/cloud/2511.25.8": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": ".nx/cache/cloud/2511.25.8"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "1803527585816470723": {},
+  "16757193113991381666": {
+    ".nx/cache/cloud/2511.25.8": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": ".nx/cache/cloud/2511.25.8"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "7251731245714825569": {},
+  "15248763036436778160": {},
+  "3371289919992627543": {},
+  "404239031298881174": {},
+  "6510640401431543280": {},
+  "17321999967969229809": {},
+  "10490029479532045222": {},
+  "12521692459184574328": {},
+  "16052145306298272972": {},
+  "15729332195602662545": {},
+  "15946437659192953297": {},
+  "12324857969706318091": {},
+  "15624412494753692125": {},
+  "12236970617209456816": {},
+  "5456645950198696583": {},
+  "2461947673532120096": {},
+  "16401873533803432922": {},
+  "4789660326914719862": {},
+  "943146300978003530": {},
+  "5549400918389273106": {},
+  "16516011956948142937": {},
+  "10436275091547079386": {},
+  "15711552799947944108": {},
+  "5752252578512121568": {},
+  "2633631129072713503": {},
+  "6509108427411563290": {},
+  "8402944401781615134": {},
+  "15228875676931814880": {},
+  "2183001524772511805": {},
+  "16294763815323812590": {},
+  "1598466734243079398": {},
+  "13126073533954953415": {},
+  "13939730284947627616": {},
+  "9162945695830863959": {},
+  "8085267240262081850": {},
+  "1418962223074351639": {},
+  "17966686865657247099": {},
+  "5531606012238149945": {},
+  "7022947796402401094": {},
+  "15643687503878693162": {},
+  "3551595590440954446": {},
+  "6769856787973271108": {},
+  "14851192873166572392": {},
+  "13589079169391008358": {},
+  "4067972915709276012": {},
+  "17642703523155515229": {},
+  "15872009342591705286": {},
+  "10421710504236656329": {},
+  "4811587723826267733": {},
+  "243737402783085824": {},
+  "3960581678880190206": {},
+  "5410578244719900911": {},
+  "6564069736403894329": {},
+  "2943155005451157731": {},
+  "17943998143879747412": {},
+  "5970341585678527317": {},
+  "7562684500942455513": {},
+  "16277889176787039508": {},
+  "17146598700119753924": {},
+  "3987079419556640850": {},
+  "10305490666534971331": {},
+  "12854615621862897463": {},
+  "16989711694442914791": {},
+  "7426647162435063972": {},
+  "12946281579160715124": {},
+  "207801748686759951": {},
+  "1488595843531549547": {},
+  "15272908231626199008": {},
+  "9883067857043410142": {},
+  "13795927354200029492": {},
+  "4758370508540481709": {
+    "apps/ZeGrana": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/ZeGrana"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/ZeGrana/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "18193962168519668984": {},
+  "5734749255269086423": {},
+  "7940207108081971900": {},
+  "2564460620206567403": {},
+  "6357851775418169993": {},
+  "8053544723656168524": {},
+  "7572587369617885352": {},
+  "4742117734674569451": {
+    "apps/ZeGrana": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/ZeGrana"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/ZeGrana/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "1888438469978784574": {
+    "apps/ZeGrana-e2e": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/ZeGrana-e2e"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/ZeGrana-e2e/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "11925884323945927746": {
+    "apps/api": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/api"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/api/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "6742682358986789960": {
+    "apps/api-e2e": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/api-e2e"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/api-e2e/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "14488763036881825848": {
+    "libs": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "13837013932669455192": {
+    "libs/src/adapters": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/adapters"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/adapters/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "12118207562558600611": {
+    "libs/src/core": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/core"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/core/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "10191021035392185262": {
+    "libs/src/externals": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/externals"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/externals/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "7005374778137149731": {
+    "libs/src/frontend": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/frontend"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/frontend/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "11083462500450039852": {
+    "libs/src/utils": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/utils"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/utils/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "17292045534833724608": {},
+  "4806113078620790025": {},
+  "13199395538082062399": {},
+  "6172523916751506117": {},
+  "15284484693886248301": {},
+  "14067040149370373898": {},
+  "7011288301671362479": {},
+  "14068610478986030145": {},
+  "2678587371722541489": {},
+  "13353009925383159672": {},
+  "5345517854811126964": {},
+  "13090871253613633734": {},
+  "11397327510082952708": {},
+  "14039976976186211050": {},
+  "8786839523331712532": {},
+  "247216395246990320": {},
+  "4263190350335693956": {},
+  "16052029743903038765": {},
+  "18355006596499715303": {},
+  "17456191716203655662": {},
+  "1231626819663897930": {},
+  "16275126838814893777": {},
+  "14610474715875947058": {},
+  "12089717200216996002": {},
+  "14725552996766723477": {},
+  "7301696069319885982": {},
+  "9452955274001588557": {},
+  "13707321333742579145": {},
+  "12240083723042514496": {},
+  "5676323285766299790": {},
+  "17380785595939126496": {},
+  "16189362796825173502": {},
+  "10640248943118569244": {},
+  "9248143903348103434": {},
+  "13346429789365850848": {},
+  "12367653860121456926": {},
+  "10656249526054706057": {},
+  "10359365650400302040": {},
+  "12373451024755977801": {},
+  "15042536839832936862": {},
+  "11109804880074140220": {},
+  "6727526249014339626": {},
+  "2021008539283978555": {},
+  "9642412525260260148": {},
+  "9505184967013756093": {},
+  "3219446629090896059": {},
+  "11443033159115063442": {},
+  "11284411305956139323": {},
+  "3275804271452561353": {},
+  "12202820720755605188": {},
+  "17842258899655113050": {},
+  "6757483153862023437": {},
+  "6112676492750622534": {},
+  "16849422993614883213": {},
+  "16534597419824786426": {},
+  "10935057175083596935": {},
+  "5782181737184349945": {},
+  "9971684194655240051": {
+    "apps/api": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/api"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/api/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "75583689644022399": {},
+  "17628714517597944061": {},
+  "8855068754312981393": {},
+  "11997907570605476806": {},
+  "9226635205452159645": {},
+  "5715047781603084153": {},
+  "10128018474268605159": {},
+  "16083621535675352586": {},
+  "9705940484518433409": {},
+  "13910834557231271632": {},
+  "10332875598614416526": {},
+  "5041027480532282811": {},
+  "18116388266076446382": {},
+  "4975034577089256955": {
+    "libs": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "4199982423051678163": {
+    "libs/src/adapters": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/adapters"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/adapters/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "9970101239587726093": {},
+  "4114690941227271828": {
+    "libs": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "1018766955011222345": {
+    "libs/src/adapters": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/adapters"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/adapters/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "17946296739336996369": {},
+  "1565854524287945599": {
+    "libs": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "13699986915505955539": {
+    "libs/src/adapters": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/adapters"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/adapters/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "11785065686938360772": {},
+  "8456797654516967056": {},
+  "7715617167087550680": {},
+  "11683224856144635088": {},
+  "12898657758591897936": {},
+  "5461209987422275957": {},
+  "984147096161648526": {},
+  "2214423334990372347": {},
+  "8787978610286109511": {},
+  "2168789752950329377": {},
+  "3077574971233583314": {},
+  "11818004416314011082": {
+    "libs": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "17220682221035332284": {
+    "libs/src/core": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/core"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/core/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "15889504598904108411": {},
+  "12970119509540843845": {
+    "libs": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "3844114656742593360": {
+    "libs/src/adapters": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/adapters"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/adapters/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "10819148446874505281": {},
+  "4413743197951235977": {
+    "apps/ZeGrana": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/ZeGrana"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/ZeGrana/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "6522041868463387031": {},
+  "6597910300325329637": {
+    "libs": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "15632188390525171680": {
+    "libs/src/adapters": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/adapters"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/adapters/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "1940196684113525810": {},
+  "14099843862621506524": {},
+  "18278755690728621707": {},
+  "12907528637391567559": {
+    "libs": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "5314165269367228082": {
+    "libs/src/adapters": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/adapters"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/adapters/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "16072338157509262235": {},
+  "14615578826436005090": {
+    "libs": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "3202966224690057044": {
+    "libs/src/core": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/core"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/core/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "1514795843798879313": {},
+  "8545729989663985066": {},
+  "4301915089163401431": {},
+  "13437075194864033267": {},
+  "6039815326546788540": {},
+  "10356328059466441525": {},
+  "12876461414762127283": {},
+  "15496231160641539996": {},
+  "16740732663651536011": {},
+  "7760240273620439911": {
+    "libs": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "10598848650767640531": {
+    "libs/src/adapters": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/src/adapters"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/libs/src/adapters/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "11041355715052090333": {},
+  "9289397633183420403": {},
+  "4913002566389916126": {
+    "apps/api": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/api"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/api/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "11337437782871093975": {},
+  "4926781473691630303": {},
+  "10837635693486646386": {
+    "apps/api": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/api"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/api/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "18261744728998054707": {},
+  "16890026952529620232": {},
+  "9737602628395724866": {},
+  "10489430135106793328": {},
+  "17900368970521078948": {},
+  "15271300473890219384": {
+    "apps/api": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/api"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.mjs",
+            "{workspaceRoot}/apps/api/eslint.config.mjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "npx eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "5523908802383493639": {},
+  "12586607300996299588": {},
+  "17466788234253198158": {},
+  "5715985346933462479": {},
+  "12528389379908197065": {},
+  "14812183626302892288": {},
+  "7124255351793430644": {},
+  "12928630617245107564": {},
+  "2878562414137457630": {},
+  "13012521077051054111": {},
+  "12393367108544128274": {},
+  "17593155025565474857": {},
+  "1984487192291959893": {},
+  "7900171558441515443": {},
+  "4931513306799147164": {},
+  "10501344616893402525": {},
+  "6337280605260336960": {},
+  "9207301839844188097": {},
+  "10879472839110091491": {},
+  "2333446063321494035": {},
+  "14082370425045986864": {},
+  "17927118442945716886": {},
+  "11818230792092649318": {},
+  "12740049319022611946": {},
+  "6684038348757454389": {},
+  "16809711373501463588": {},
+  "14323046560507930121": {},
+  "11118534999854560775": {},
+  "15129438670891654149": {},
+  "16011951976214716315": {},
+  "18283045131464498624": {},
+  "4354568865114227523": {},
+  "15508619064003998578": {},
+  "11134139021461623613": {},
+  "11888712984938528752": {},
+  "9569664616231244744": {},
+  "8769167172721786263": {},
+  "9862263069319428996": {},
+  "3697406530924057473": {},
+  "6658263815860382604": {},
+  "8992796275443262916": {},
+  "14584369178083953608": {},
+  "11047317022715946584": {},
+  "4222783601881645656": {},
+  "8580566318844675066": {},
+  "13863552303838102791": {},
+  "7849592487164387150": {},
+  "1590194875508571834": {},
+  "8997512052284925868": {},
+  "14110380568475240026": {},
+  "11544191675433793507": {},
+  "1551302827394739281": {},
+  "11499259991779818748": {},
+  "7453372850588452081": {},
+  "13472126076703666586": {},
+  "6819913992208134012": {},
+  "9822704615817621952": {},
+  "15228215871063492286": {},
+  "8271962474301470927": {},
+  "11234872103115767861": {},
+  "14936493288459273698": {},
+  "5081380544258884502": {},
+  "6428509628036626573": {},
+  "13609583690204681250": {},
+  "9632970703297633502": {},
+  "8335116535689739662": {},
+  "10310134464876559390": {},
+  "17412176291938194627": {},
+  "10928135158734497595": {},
+  "2154610327469723860": {},
+  "11013976173476158454": {},
+  "4085692166066858798": {},
+  "14772271347431092846": {},
+  "16724768766587392309": {},
+  "12789171727303886546": {},
+  "1392295894365276927": {},
+  "13328216978033082989": {},
+  "15421050417200021001": {},
+  "11775165135065564583": {},
+  "8071523803355585385": {},
+  "1987842751103011783": {},
+  "5803941261517160293": {},
+  "5264771576425326500": {},
+  "849601187168438561": {},
+  "17891845561614814262": {},
+  "2582290132429754247": {},
+  "1674296685288841674": {},
+  "2983469772980735279": {},
+  "296764434360404160": {},
+  "8363883053592448321": {},
+  "1622944627563788533": {},
+  "10608310500155741100": {},
+  "6449784559578969813": {},
+  "259361617265647189": {},
+  "2797103056931297662": {},
+  "14349238171403577614": {},
+  "16946018003535222131": {},
+  "14688911591847295519": {},
+  "14196387368318334035": {},
+  "12719587571736793426": {},
+  "15894483906991183931": {},
+  "18187343268240963652": {},
+  "7446072699635536350": {},
+  "10677031271448214146": {},
+  "14977220600303820550": {},
+  "1207626153547893266": {},
+  "1296089995938415119": {},
+  "14635160324130541660": {},
+  "12279441491017616393": {},
+  "15771311433649389719": {},
+  "9482291089242326581": {},
+  "9366087158531221222": {},
+  "6981726902079906363": {},
+  "14866680298378803767": {},
+  "1041687798883059414": {},
+  "1166906331811651263": {},
+  "5726563837059676879": {},
+  "6975872915888836890": {},
+  "18180785607993043319": {},
+  "9413569776005405386": {},
+  "8391290223418330209": {},
+  "3669724298386928276": {},
+  "12954708398170385973": {},
+  "461027356664075915": {},
+  "18280431083556006092": {},
+  "3472885188987911047": {},
+  "1390763498179270985": {},
+  "1984330758695331557": {},
+  "13318740974359717976": {},
+  "12274450776655463775": {},
+  "12717894837825235098": {},
+  "3904047680726013535": {},
+  "4042016833756954594": {},
+  "3294770327500467873": {},
+  "5743225641330816706": {},
+  "12297956266158483841": {},
+  "6436743648107397021": {},
+  "13714603790386002865": {},
+  "16136880362062525436": {},
+  "3823738537405666440": {},
+  "8083098242321435225": {},
+  "15357060886292315047": {},
+  "9269115767932497356": {},
+  "2938733693541171427": {},
+  "11791205134130564934": {},
+  "2742626602510906889": {},
+  "4548711851147476065": {},
+  "12257557113325204869": {},
+  "7983684586143651798": {},
+  "7388035514787804625": {},
+  "7140790916484310879": {},
+  "1439742037951358942": {},
+  "4874680305621116584": {},
+  "10273457440612196495": {},
+  "7153103015807619239": {},
+  "3188053716264998244": {},
+  "18106670037920793521": {},
+  "2537480438392960178": {},
+  "3857772553757086551": {},
+  "6467863687182946315": {},
+  "15712028373188381760": {},
+  "10308442491248925497": {},
+  "11104812832997150146": {},
+  "2974106552216725044": {},
+  "10415090820173955922": {},
+  "16831266956953560966": {},
+  "18191089653611742841": {},
+  "16852904503057291641": {},
+  "943467556158078683": {},
+  "4306460719945733488": {},
+  "14236441999814085348": {},
+  "5603496027409223828": {},
+  "326427712153547787": {},
+  "9544020906664915590": {},
+  "18110804431983889504": {},
+  "1452698296609177975": {},
+  "14453014625362027840": {},
+  "10234922761485229178": {},
+  "10492799174796598563": {},
+  "5176074314734844475": {},
+  "15558551189616416476": {},
+  "11527096059269266906": {},
+  "6735981506878704804": {},
+  "12404977902564659128": {},
+  "9204195189761442014": {},
+  "7444940755667008121": {},
+  "12173569362559657707": {},
+  "1232696071573800351": {},
+  "15400660368327522294": {},
+  "17424641364410168807": {},
+  "9314718919601536238": {},
+  "9334878508593942261": {},
+  "5639298621926922434": {},
+  "13428583987887226304": {},
+  "294377732818609425": {},
+  "10979061386906969306": {},
+  "13425478128617417585": {},
+  "13569070588858011231": {},
+  "7780050971341371889": {},
+  "5866695738530310233": {},
+  "16043559381294165061": {},
+  "6264863206685095758": {},
+  "75015190013404153": {},
+  "17069398682270625551": {},
+  "8331137249011246524": {},
+  "12022589774220050324": {},
+  "16201924269787305068": {},
+  "14178355551447722684": {},
+  "17945418655781013572": {},
+  "11665519805026447406": {},
+  "16280093980722250771": {},
+  "10198886744558801319": {},
+  "10260677155855876418": {},
+  "7716426966741167161": {},
+  "555873916037055540": {},
+  "1960063501724707594": {},
+  "5317295385395132627": {},
+  "9805703371383260585": {},
+  "1506014779830082110": {},
+  "14927908956724994034": {},
+  "15946080455794612778": {},
+  "13114072534064547141": {},
+  "12976036802835217467": {},
+  "402986315619187444": {},
+  "15165370982882603450": {},
+  "1931942013693732952": {},
+  "8233367435978604899": {},
+  "15637518471576635873": {},
+  "14722908208149794718": {},
+  "13139260876782350081": {},
+  "12567221761720196114": {},
+  "18437520972441102247": {},
+  "9690411155203217637": {},
+  "8999835107408973243": {},
+  "4699022009026210461": {},
+  "1478046322096057951": {},
+  "13449569028468923087": {},
+  "7575209487293871301": {},
+  "1390350172611328809": {},
+  "12088862313177610850": {},
+  "14080744343027282870": {},
+  "11223476919640703414": {},
+  "3239419449807637849": {},
+  "8208805413077699086": {},
+  "13232846164649504661": {},
+  "15853559904984492050": {},
+  "11699202359301658440": {},
+  "18021348954654638119": {},
+  "16498289728160118467": {},
+  "14809528079238162341": {},
+  "93864375127445475": {},
+  "3230241152288366242": {},
+  "13878493789048835862": {},
+  "4995375859572807266": {},
+  "8183912058534631432": {},
+  "17156839128076016838": {},
+  "7315110795538849907": {},
+  "3661999811337771808": {},
+  "3938085789048200492": {},
+  "8165947784589090123": {},
+  "515733523117199103": {},
+  "17745351756525358420": {},
+  "4024230219911227603": {},
+  "9120764291493017642": {},
+  "16963582042583510308": {},
+  "17198259595890905351": {},
+  "14843837726893061714": {},
+  "4614477152007688523": {},
+  "14539754618864385131": {},
+  "6981430546395598629": {},
+  "8134776548414256912": {},
+  "16831429046280608709": {},
+  "10363650442837521567": {},
+  "12065572709384258601": {},
+  "13191036911892850386": {},
+  "836627557994583771": {},
+  "13621396462964669944": {},
+  "2828313366890032637": {},
+  "14730036589402009691": {},
+  "7965540659630741967": {},
+  "7284602351388426022": {},
+  "4033449421804181024": {},
+  "7048061099753776670": {},
+  "10216768250136297016": {},
+  "15262010419074837851": {},
+  "8956224959156833906": {},
+  "970683337690459088": {},
+  "4672561853243632508": {},
+  "256935687201588422": {},
+  "6120426775293259620": {},
+  "1508721460498905411": {},
+  "5665170697112818238": {},
+  "5718629141166252871": {},
+  "4317740908430754503": {},
+  "12170574755984414121": {},
+  "9838494702610411712": {},
+  "10762226489075324697": {},
+  "7182468760961823922": {},
+  "18272748488617102795": {},
+  "9305053030837100109": {},
+  "2127672338369580914": {},
+  "1605799860864865858": {},
+  "3698275838131645294": {},
+  "12417814083036323550": {},
+  "17830227817521897449": {},
+  "397982039747720462": {},
+  "1255007958231079022": {},
+  "2720940075624936554": {},
+  "698208675364848335": {},
+  "10738108114831677245": {},
+  "5202143938740639590": {},
+  "3343196010134479370": {},
+  "7299436994864910533": {},
+  "18089188952687798337": {},
+  "6046141844352077984": {},
+  "7637562680084779031": {},
+  "5143455926537789774": {},
+  "10238437228560873972": {},
+  "17721710965774507335": {},
+  "8462100070642998234": {},
+  "15104315739516202405": {},
+  "1599736696105450129": {},
+  "13046630883930652597": {},
+  "5647199809378709220": {},
+  "11793109747819554797": {},
+  "9819899535379572101": {},
+  "8448273209607208134": {},
+  "11157663893707199774": {},
+  "9945997559871268572": {},
+  "2275878696728241473": {},
+  "822010657157934965": {},
+  "4962804680364499002": {},
+  "4146821048010865184": {},
+  "15771197645009640568": {},
+  "6813788699940224998": {},
+  "17689441035462499114": {},
+  "11936816485956984768": {},
+  "17656998060033266954": {},
+  "4125492835610616835": {},
+  "3074057419964741256": {},
+  "16477981402389121024": {},
+  "3454683068308936785": {},
+  "4539496964141985088": {},
+  "4102342095559780844": {},
+  "8328126634089800346": {},
+  "10815610432311078913": {},
+  "9390223669130195206": {},
+  "9571507414296352574": {},
+  "8476809100589125602": {},
+  "7485755763939661276": {},
+  "14555556240330405794": {},
+  "11668221128656129700": {},
+  "976383898087135839": {},
+  "9484964189770407427": {},
+  "4395372993829430966": {},
+  "6990432225616347772": {},
+  "881844079624383150": {},
+  "17700576413345879339": {},
+  "4164558622044200016": {},
+  "16049000028304171494": {},
+  "14173975659856478289": {},
+  "7851819615209606521": {},
+  "7688302976705293191": {},
+  "14078400723342467604": {},
+  "6269947651949628713": {},
+  "13662327790670487248": {},
+  "10519598092528761124": {},
+  "13657177074171727908": {},
+  "18135786443581109896": {},
+  "7236110284702033073": {},
+  "7748739639489495632": {},
+  "7745127515482509544": {}
 }

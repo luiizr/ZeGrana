@@ -465,6 +465,11 @@
     "type": "static"
   },
   {
+    "source": "npm:@angular/animations",
+    "target": "npm:tslib",
+    "type": "static"
+  },
+  {
     "source": "npm:@angular/build",
     "target": "npm:@angular/compiler",
     "type": "static"
@@ -23862,6 +23867,11 @@
   {
     "source": "npm:@jest/schemas@30.0.5",
     "target": "npm:@sinclair/typebox@0.34.41",
+    "type": "static"
+  },
+  {
+    "source": "npm:primeng",
+    "target": "npm:@angular/animations",
     "type": "static"
   },
   {

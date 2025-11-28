@@ -14,7 +14,7 @@ export default class salvarUsuario implements CasoDeUso<Usuario, void> {
         if(!usuario.id){
             try {
             console.log('Usuario sem ID, criando novo usuário e novo dashboard')
-            const dashboardId = await this.repoDashboard.criarDashboard()
+            const dashboardId = await this.repoDashboard.criar()
             const novoUsuario: Usuario = {
                 // id: usuario.id,
                 email: usuario.email,
