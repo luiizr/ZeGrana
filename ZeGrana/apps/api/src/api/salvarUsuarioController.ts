@@ -9,7 +9,7 @@ export default class SalvarUsuarioController {
         cdu: salvarUsuario
     ){
         servidor.post('/api/salvarUsuario', async (req, res) => {
-            if (!req.body.Id){
+            if (!req.body.id){
             try {
                 const senhaCripto = await provedorCriptografia.criptografar(req.body.senha);
                 await cdu.executar({

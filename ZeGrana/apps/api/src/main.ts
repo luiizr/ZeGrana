@@ -8,10 +8,11 @@ import { db, ProvedorPostgreSQL } from '@ze-grana/externals';
 
 
 import salvarUsuarioController from '../src/api/salvarUsuarioController';
+import loginController from '../src/api/loginController';
 
 import { salvarUsuario } from '@ze-grana/core';
 import { senhaCripto } from '@ze-grana/externals';
-import { ColecaoUsuario } from '@ze-grana/adapters';
+import { ColecaoUsuario, ColecaoDashboard } from '@ze-grana/adapters';
 /*
 =============================
 Iniciando o servidor Express
@@ -64,9 +65,10 @@ db.connect()
 */
 const provedorPG = new ProvedorPostgreSQL()
 const repoUsuario = new ColecaoUsuario(provedorPG)
+const repoDashboard = new ColecaoDashboard(provedorPG)
 const provCripto = new senhaCripto()
 
-const cduSalvarUsuario = new salvarUsuario(repoUsuario)
+const cduSalvarUsuario = new salvarUsuario(repoUsuario, repoDashboard)
 
 
 /*
@@ -76,6 +78,7 @@ const cduSalvarUsuario = new salvarUsuario(repoUsuario)
 */
 
 new salvarUsuarioController(app, provCripto, cduSalvarUsuario )
+new loginController(app, provCripto, repoUsuario)
 
 /*
 =============================

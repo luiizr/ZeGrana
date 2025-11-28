@@ -251,6 +251,15 @@
       "hash": "sha512-6Zf9EBzW8eBTDxqgzBqKD4a9IH0uAVZFX9zgASipk8m5sO6YkjaS+auplmEac3ESzVCh9AzwNDFD68JAE0ugLQ=="
     }
   },
+  "npm:@angular/animations": {
+    "type": "npm",
+    "name": "npm:@angular/animations",
+    "data": {
+      "version": "20.3.14",
+      "packageName": "@angular/animations",
+      "hash": "sha512-Sx3/XNu2rR+R8T8JkJEaIpZDZPk0IecS0Ayt6HTanNUZXuw0HVou3vkjR5B2St5nM4MXs0gh+S6aLNuArtqJTQ=="
+    }
+  },
   "npm:@angular/build": {
     "type": "npm",
     "name": "npm:@angular/build",

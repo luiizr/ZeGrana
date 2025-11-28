@@ -1380,6 +1380,15 @@
         "hash": "sha512-6Zf9EBzW8eBTDxqgzBqKD4a9IH0uAVZFX9zgASipk8m5sO6YkjaS+auplmEac3ESzVCh9AzwNDFD68JAE0ugLQ=="
       }
     },
+    "npm:@angular/animations": {
+      "type": "npm",
+      "name": "npm:@angular/animations",
+      "data": {
+        "version": "20.3.14",
+        "packageName": "@angular/animations",
+        "hash": "sha512-Sx3/XNu2rR+R8T8JkJEaIpZDZPk0IecS0Ayt6HTanNUZXuw0HVou3vkjR5B2St5nM4MXs0gh+S6aLNuArtqJTQ=="
+      }
+    },
     "npm:@angular/build": {
       "type": "npm",
       "name": "npm:@angular/build",
@@ -17083,6 +17092,11 @@
       },
       {
         "source": "ZeGrana",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "ZeGrana",
         "target": "npm:primeng",
         "type": "static"
       },
@@ -17098,7 +17112,7 @@
       },
       {
         "source": "ZeGrana",
-        "target": "npm:@angular/platform-browser",
+        "target": "npm:@angular/forms",
         "type": "static"
       },
       {
@@ -17522,6 +17536,11 @@
       {
         "source": "@ze-grana/source",
         "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "@ze-grana/source",
+        "target": "npm:@angular/animations",
         "type": "static"
       },
       {
@@ -18103,6 +18122,13 @@
       {
         "source": "npm:@angular-eslint/utils",
         "target": "npm:@angular-eslint/bundled-angular-compiler",
+        "type": "static"
+      }
+    ],
+    "npm:@angular/animations": [
+      {
+        "source": "npm:@angular/animations",
+        "target": "npm:tslib",
         "type": "static"
       }
     ],
@@ -37033,6 +37059,11 @@
     "npm:primeng": [
       {
         "source": "npm:primeng",
+        "target": "npm:@angular/animations",
+        "type": "static"
+      },
+      {
+        "source": "npm:primeng",
         "target": "npm:@angular/common",
         "type": "static"
       },
@@ -40027,5 +40058,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1764028177572
+  "computedAt": 1764342247879
 }

@@ -1,5 +1,6 @@
 export type { default as ProvedorDados } from './lib/providers/ProvedorDados';
 export { default as ColecaoUsuario } from './lib/db/ColecaoUsuario';
+export { default as ColecaoDashboard } from './lib/db/ColecaoDashboard';
 export type {
     Filtro,
     Ordenacao,
