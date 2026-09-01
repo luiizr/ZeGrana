@@ -1,9 +1,0 @@
-{
-  "run": {
-    "command": "nx serve ZeGrana",
-    "startTime": "2025-11-24T23:47:54.736Z",
-    "endTime": "2025-11-24T23:48:01.234Z",
-    "inner": false
-  },
-  "tasks": []
-}
