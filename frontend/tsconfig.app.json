@@ -1,0 +1,5 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": { "outDir": "../dist/frontend", "types": [] },
+  "include": ["src/**/*.ts"]
+}

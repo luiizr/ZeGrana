@@ -1,0 +1,5 @@
+{
+  "compilerOptions": { "strict": true, "noImplicitOverride": true, "noPropertyAccessFromIndexSignature": true, "noImplicitReturns": true, "noFallthroughCasesInSwitch": true, "skipLibCheck": true },
+  "files": [],
+  "references": [{ "path": "./frontend/tsconfig.app.json" }, { "path": "./backend/tsconfig.json" }]
+}

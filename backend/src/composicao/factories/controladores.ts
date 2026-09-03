@@ -1,0 +1,14 @@
+import { AutenticarUsuario, RegistrarUsuario } from '../../aplicacao/casos-de-uso/autenticacao.js';
+import { GerenciarLancamentos } from '../../aplicacao/casos-de-uso/lancamentos.js';
+import { AuthController } from '../../apresentacao/controllers/auth-controller.js';
+import { LancamentosController } from '../../apresentacao/controllers/lancamentos-controller.js';
+import { HasherBcrypt } from '../../infraestrutura/criptografia/hasher-bcrypt.js';
+import { LancamentoRepositorioPostgres } from '../../infraestrutura/repositorios/lancamento-repositorio-postgres.js';
+import { UsuarioRepositorioPostgres } from '../../infraestrutura/repositorios/usuario-repositorio-postgres.js';
+import { RecursosFinanceirosPostgres } from '../../infraestrutura/repositorios/recursos-financeiros-postgres.js';
+import { GerenciarRecursosFinanceiros } from '../../aplicacao/casos-de-uso/recursos-financeiros.js';
+import { RecursosFinanceirosController } from '../../apresentacao/controllers/recursos-financeiros-controller.js';
+const usuarios = new UsuarioRepositorioPostgres(); const hasher = new HasherBcrypt();
+export const authController = new AuthController(new RegistrarUsuario(usuarios, hasher), new AutenticarUsuario(usuarios, hasher), usuarios);
+export const lancamentosController = new LancamentosController(new GerenciarLancamentos(new LancamentoRepositorioPostgres()));
+export const recursosFinanceirosController = new RecursosFinanceirosController(new GerenciarRecursosFinanceiros(new RecursosFinanceirosPostgres()));

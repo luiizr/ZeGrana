@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Record Spending - Venzer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed-variant": "#234e41",
+                      "surface-container-high": "#e6e8ea",
+                      "surface": "#f7f9fb",
+                      "on-error": "#ffffff",
+                      "primary": "#002018",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "inverse-primary": "#a2d0bf",
+                      "primary-container": "#06372b",
+                      "on-error-container": "#93000a",
+                      "on-surface": "#191c1e",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-container": "#4b6d00",
+                      "on-background": "#191c1e",
+                      "on-primary-fixed": "#002118",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "surface-bright": "#f7f9fb",
+                      "background": "#f7f9fb",
+                      "primary-fixed": "#beeddb",
+                      "secondary": "#476800",
+                      "outline-variant": "#c0c8c3",
+                      "on-secondary-fixed-variant": "#354e00",
+                      "surface-dim": "#d8dadc",
+                      "error-container": "#ffdad6",
+                      "primary-fixed-dim": "#a2d0bf",
+                      "surface-variant": "#e0e3e5",
+                      "on-tertiary": "#ffffff",
+                      "secondary-container": "#bcf063",
+                      "secondary-fixed-dim": "#a4d64c",
+                      "tertiary": "#191b1c",
+                      "secondary-fixed": "#bff365",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-surface-variant": "#414845",
+                      "on-secondary-fixed": "#131f00",
+                      "surface-container": "#eceef0",
+                      "tertiary-container": "#2e3030",
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "surface-tint": "#3b6758",
+                      "error": "#ba1a1a",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-primary-container": "#74a191",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-container": "#969898",
+                      "on-primary": "#ffffff",
+                      "outline": "#717975",
+                      "inverse-surface": "#2d3133",
+                      "surface-container-low": "#f2f4f6",
+                      "tertiary-fixed": "#e2e2e2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base-unit": "4px",
+                      "container-padding-mobile": "20px",
+                      "stack-gap-md": "16px",
+                      "grid-gutter": "16px",
+                      "stack-gap-lg": "24px",
+                      "container-padding-desktop": "40px",
+                      "stack-gap-sm": "8px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Geist"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-sm": [
+                              "Geist"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "balance-xl": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg-mobile": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "balance-xl": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.03em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "38px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        /* Custom styles for Webkit scrollbars and specific UI tweaks */
+        ::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: theme('colors.surface-variant');
+            border-radius: theme('borderRadius.full');
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .input-glow:focus-within {
+            border-color: theme('colors.secondary-container');
+            box-shadow: 0 0 0 1px theme('colors.secondary-container');
+        }
+        
+        /* Hide number input spinners */
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl flex justify-between items-center px-container-padding-mobile py-4 hidden md:flex">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+<h1 class="text-headline-md font-headline-md font-bold tracking-tight text-primary">venzer.</h1>
+</div>
+<nav class="flex items-center gap-8">
+<!-- Destructive/Cancel action instead of standard nav for this task-focused screen -->
+<span class="text-body-md font-body-md text-on-surface-variant">Weekly Check-in</span>
+</nav>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img alt="User profile photo of Jon Snow" class="w-full h-full object-cover" data-alt="A professional user profile photo of Jon Snow, with a minimalist background, well-lit, conveying trust and reliability in a financial context, light mode aesthetic, crisp and clear." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgP1mwQzQqjmGnzXw1928XW3EBD3BdTxaEch6cGV7hFgnA6xDAIOuif4mFnBrZhtZUZ70NhrxmeYrD61OCnssNk2C0A6jmlJY5DDcg2z_CiKWJeggZiJwKW-NkviWXZQq7ox4qB9Dmfz1Xn3Z7gjUAqiaQN6BADyk7UYU1Mp0tPTVjyDyvnM1OgqNHjHM1_Uve_YMOP_jYoFWQUG0AmVuIEe_Lwi-lQyh4RR3_Kq4FGTTYzwhE84W6Aw"/>
+</div>
+</header>
+<!-- Mobile Header (Contextual back button for task screen) -->
+<header class="md:hidden flex justify-between items-center px-container-padding-mobile py-4 bg-background/80 backdrop-blur-xl sticky top-0 z-50">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant bg-surface hover:bg-surface-variant transition-colors" onclick="window.history.back()">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+<h1 class="text-body-md font-body-md font-bold text-primary">Novo Registro</h1>
+<div class="w-10 h-10"></div> <!-- Spacer for centering -->
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col pt-4 md:pt-28 pb-32 px-container-padding-mobile md:px-container-padding-desktop w-full max-w-lg mx-auto gap-stack-gap-lg">
+<!-- Type Selection Toggle -->
+<div class="flex p-1 bg-surface-container-low rounded-xl">
+<button class="flex-1 py-3 text-label-sm font-label-sm rounded-lg bg-white text-primary shadow-sm transition-all duration-200" id="btn-expense">
+                Quanto gastei
+            </button>
+<button class="flex-1 py-3 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-primary transition-all duration-200" id="btn-balance">
+                O que eu tenho
+            </button>
+</div>
+<!-- Amount Input Area -->
+<section class="flex flex-col items-center justify-center py-8 glass-panel rounded-2xl relative overflow-hidden group input-glow transition-all duration-300">
+<!-- Decorative gradient orb behind amount -->
+<div class="absolute inset-0 opacity-20 group-focus-within:opacity-40 transition-opacity duration-500 blur-3xl pointer-events-none" style="background: radial-gradient(circle at 50% 50%, var(--tw-colors-secondary-container) 0%, transparent 60%);"></div>
+<label class="text-label-caps font-label-caps text-on-surface-variant mb-2 relative z-10" for="amount-input">VALOR</label>
+<div class="flex items-baseline gap-1 relative z-10">
+<span class="text-headline-md font-headline-md text-on-surface-variant">R$</span>
+<input autofocus="" class="bg-transparent border-none text-balance-xl font-balance-xl text-primary text-center focus:ring-0 w-full max-w-[200px] placeholder:text-surface-variant p-0 m-0 leading-none" id="amount-input" placeholder="0,00" type="number"/>
+</div>
+</section>
+<!-- Category Selector -->
+<section class="flex flex-col gap-stack-gap-sm">
+<h2 class="text-label-caps font-label-caps text-on-surface-variant px-1">CATEGORIA</h2>
+<div class="grid grid-cols-4 gap-3">
+<!-- Category Item -->
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl bg-surface hover:bg-surface-container-high transition-colors border border-transparent focus:border-secondary-container outline-none">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="restaurant">restaurant</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface">Food</span>
+</button>
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl bg-surface hover:bg-surface-container-high transition-colors border border-transparent focus:border-secondary-container outline-none">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="directions_bus">directions_bus</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface">Transport</span>
+</button>
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl bg-surface hover:bg-surface-container-high transition-colors border border-transparent focus:border-secondary-container outline-none">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface">Bills</span>
+</button>
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl bg-surface hover:bg-surface-container-high transition-colors border border-transparent focus:border-secondary-container outline-none">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface">Shopping</span>
+</button>
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl bg-surface hover:bg-surface-container-high transition-colors border border-transparent focus:border-secondary-container outline-none">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface">Health</span>
+</button>
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl bg-surface hover:bg-surface-container-high transition-colors border border-transparent focus:border-secondary-container outline-none">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="more_horiz">more_horiz</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface">Other</span>
+</button>
+</div>
+</section>
+<!-- Date & Note (Simplified) -->
+<section class="flex flex-col gap-3">
+<div class="flex items-center justify-between p-4 rounded-xl bg-surface border border-surface-variant">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="calendar_today">calendar_today</span>
+<span class="text-body-md font-body-md text-on-surface">Today, 24 Oct</span>
+</div>
+<button class="text-label-sm font-label-sm text-primary underline">Edit</button>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-xl bg-surface border border-surface-variant input-glow">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="edit_note">edit_note</span>
+<input class="bg-transparent border-none text-body-md font-body-md text-on-surface placeholder:text-on-surface-variant w-full focus:ring-0 p-0" placeholder="Add a note (optional)" type="text"/>
+</div>
+</section>
+</main>
+<!-- Floating Action / Submit Button Area -->
+<div class="fixed bottom-0 left-0 w-full p-container-padding-mobile bg-gradient-to-t from-background via-background/90 to-transparent z-40 pb-safe">
+<div class="max-w-lg mx-auto">
+<button class="w-full py-4 rounded-full bg-secondary-container text-on-secondary-container text-headline-md font-headline-md font-semibold hover:bg-secondary-fixed-dim transition-colors shadow-lg active:scale-[0.98] transform duration-150">
+                Salvar Registro
+            </button>
+</div>
+</div>
+<!-- Navigation suppressed per Shared Components Logic (Task-Focused screen with 'Close/Back' implied flow) -->
+<script>
+        // Simple toggle logic for demonstration
+        const btnExpense = document.getElementById('btn-expense');
+        const btnBalance = document.getElementById('btn-balance');
+
+        function setToggleState(activeBtn, inactiveBtn) {
+            activeBtn.classList.add('bg-white', 'text-primary', 'shadow-sm');
+            activeBtn.classList.remove('text-on-surface-variant');
+            
+            inactiveBtn.classList.remove('bg-white', 'text-primary', 'shadow-sm');
+            inactiveBtn.classList.add('text-on-surface-variant');
+        }
+
+        btnExpense.addEventListener('click', () => setToggleState(btnExpense, btnBalance));
+        btnBalance.addEventListener('click', () => setToggleState(btnBalance, btnExpense));
+        
+        // Auto-format currency (basic)
+        const amountInput = document.getElementById('amount-input');
+        amountInput.addEventListener('input', function(e) {
+            // Replace non-numeric chars for basic UX (in real app, use proper formatter)
+            this.value = this.value.replace(/[^0-9.,]/g, '');
+        });
+    </script>
+</body></html>

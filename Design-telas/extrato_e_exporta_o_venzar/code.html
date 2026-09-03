@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contas a Pagar - Exportar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Geist:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed-variant": "#234e41",
+                      "surface-container-high": "#e6e8ea",
+                      "surface": "#f7f9fb",
+                      "on-error": "#ffffff",
+                      "primary": "#002018",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "inverse-primary": "#a2d0bf",
+                      "primary-container": "#06372b",
+                      "on-error-container": "#93000a",
+                      "on-surface": "#191c1e",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-container": "#4b6d00",
+                      "on-background": "#191c1e",
+                      "on-primary-fixed": "#002118",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "surface-bright": "#f7f9fb",
+                      "background": "#f7f9fb",
+                      "primary-fixed": "#beeddb",
+                      "secondary": "#476800",
+                      "outline-variant": "#c0c8c3",
+                      "on-secondary-fixed-variant": "#354e00",
+                      "surface-dim": "#d8dadc",
+                      "error-container": "#ffdad6",
+                      "primary-fixed-dim": "#a2d0bf",
+                      "surface-variant": "#e0e3e5",
+                      "on-tertiary": "#ffffff",
+                      "secondary-container": "#bcf063",
+                      "secondary-fixed-dim": "#a4d64c",
+                      "tertiary": "#191b1c",
+                      "secondary-fixed": "#bff365",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-surface-variant": "#414845",
+                      "on-secondary-fixed": "#131f00",
+                      "surface-container": "#eceef0",
+                      "tertiary-container": "#2e3030",
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "surface-tint": "#3b6758",
+                      "error": "#ba1a1a",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-primary-container": "#74a191",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-container": "#969898",
+                      "on-primary": "#ffffff",
+                      "outline": "#717975",
+                      "inverse-surface": "#2d3133",
+                      "surface-container-low": "#f2f4f6",
+                      "tertiary-fixed": "#e2e2e2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base-unit": "4px",
+                      "container-padding-mobile": "20px",
+                      "stack-gap-md": "16px",
+                      "grid-gutter": "16px",
+                      "stack-gap-lg": "24px",
+                      "container-padding-desktop": "40px",
+                      "stack-gap-sm": "8px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Geist"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-sm": [
+                              "Geist"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "balance-xl": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg-mobile": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "balance-xl": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.03em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "38px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pb-24 md:pb-0">
+<!-- Top App Bar for Desktop / Semantic Navigation Header -->
+<header class="bg-background/80 backdrop-blur-xl docked full-width top-0 z-50 flex justify-between items-center w-full px-container-padding-mobile py-4 flat no shadows md:px-container-padding-desktop border-b border-surface-container-high md:border-none md:shadow-sm">
+<div class="flex items-center gap-4">
+<!-- Back button for deep linked screen -->
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors md:hidden">
+<span class="material-symbols-outlined text-on-surface" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-headline-md font-headline-md font-bold tracking-tight text-primary">Contas a Pagar</h1>
+</div>
+<div class="hidden md:flex gap-6 items-center">
+<nav class="flex gap-4">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:opacity-80 transition-opacity flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span> Home
+                 </a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:opacity-80 transition-opacity flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" data-icon="bar_chart">bar_chart</span> Relatórios
+                 </a>
+<a class="text-label-sm font-label-sm text-primary flex items-center gap-2 font-bold" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span> Contas
+                 </a>
+</nav>
+</div>
+<div class="flex items-center gap-3">
+<img alt="Profile" class="w-10 h-10 rounded-full object-cover border border-outline-variant shadow-sm" data-alt="A small, circular profile picture of an elegant professional woman in her 30s with short dark hair, wearing a stylish minimalist black top, set against a bright, modern, well-lit white studio background. The lighting is soft and even, typical of high-end corporate or fintech applications." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDekZeAL172NbK2Ae7tz_tPTbkKI20-5K8igojgYzHlhI4TLB5wonnOQHk9XN_LwzM6okK--2ZZTO7HK-QbJ8bqzV0oRalWCampMoEPyKLjRVqks65Qx8v4SDWZnVkwcniBOeCSNkn46aVodWgWrzt96e04QnIhFcG2AEyW6DNzVaSDy7DDKUAU5jlQL9mpreKjoVdDqhkXm0V4qNOEHg_HB7Oz0p_fpG-nxL6hfbGCHZJCFVl75rq72A"/>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1200px] mx-auto px-container-padding-mobile md:px-container-padding-desktop py-6">
+<!-- Summary Card (Bento style) -->
+<section class="mb-stack-gap-lg">
+<div class="bg-primary rounded-xl p-6 shadow-sm border border-white/10 relative overflow-hidden">
+<!-- Decorative gradient blur -->
+<div class="absolute -top-10 -right-10 w-48 h-48 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<p class="text-label-sm font-label-sm text-on-primary-container mb-2 uppercase tracking-wider">Total a Pagar (Outubro)</p>
+<h2 class="text-balance-xl font-balance-xl text-on-primary">R$ 8.450,00</h2>
+</div>
+<div class="flex items-center gap-3 bg-white/5 rounded-full px-4 py-2 border border-white/10 backdrop-blur-sm">
+<div class="w-2 h-2 rounded-full bg-secondary-container"></div>
+<p class="text-label-sm font-label-sm text-on-primary-container">4 contas pendentes</p>
+</div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-grid-gutter">
+<!-- Expenses List -->
+<section class="lg:col-span-2">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-body-lg font-body-lg font-semibold text-on-surface">Próximos Vencimentos</h3>
+<button class="text-label-sm font-label-sm text-surface-tint flex items-center gap-1 hover:underline">
+                        Filtrar <span class="material-symbols-outlined text-[16px]" data-icon="filter_list">filter_list</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl border border-surface-container-high shadow-sm overflow-hidden">
+<ul class="divide-y divide-surface-container-high">
+<!-- List Item 1 -->
+<li class="p-4 hover:bg-surface-container-low transition-colors flex items-center justify-between gap-4">
+<div class="flex items-center gap-4 flex-1">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="home_work">home_work</span>
+</div>
+<div>
+<h4 class="text-body-md font-body-md font-semibold text-on-surface">Aluguel Escritório</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Vence em 05/10</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-body-md font-body-md font-bold text-on-surface">R$ 4.500,00</span>
+<label class="flex items-center cursor-pointer relative">
+<input class="peer sr-only" type="checkbox"/>
+<div class="w-6 h-6 rounded-md border-2 border-outline peer-checked:border-secondary peer-checked:bg-secondary flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-white text-[16px] opacity-0 peer-checked:opacity-100" data-icon="check" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+</label>
+</div>
+</li>
+<!-- List Item 2 -->
+<li class="p-4 hover:bg-surface-container-low transition-colors flex items-center justify-between gap-4">
+<div class="flex items-center gap-4 flex-1">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="bolt">bolt</span>
+</div>
+<div>
+<h4 class="text-body-md font-body-md font-semibold text-on-surface">Energia Elétrica</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Vence em 10/10</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-body-md font-body-md font-bold text-on-surface">R$ 850,00</span>
+<label class="flex items-center cursor-pointer relative">
+<input class="peer sr-only" type="checkbox"/>
+<div class="w-6 h-6 rounded-md border-2 border-outline peer-checked:border-secondary peer-checked:bg-secondary flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-white text-[16px] opacity-0 peer-checked:opacity-100" data-icon="check" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+</label>
+</div>
+</li>
+<!-- List Item 3 (Paid State Simulation) -->
+<li class="p-4 hover:bg-surface-container-low transition-colors flex items-center justify-between gap-4 opacity-60">
+<div class="flex items-center gap-4 flex-1">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="language">language</span>
+</div>
+<div>
+<h4 class="text-body-md font-body-md font-semibold text-on-surface line-through">Internet Banda Larga</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Pago em 02/10</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-body-md font-body-md font-bold text-on-surface line-through">R$ 300,00</span>
+<label class="flex items-center cursor-pointer relative">
+<input checked="" class="peer sr-only" disabled="" type="checkbox"/>
+<div class="w-6 h-6 rounded-md border-2 border-outline peer-checked:border-outline peer-checked:bg-surface-container flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-outline text-[16px] opacity-0 peer-checked:opacity-100" data-icon="check" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+</label>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<!-- Export Section -->
+<section class="lg:col-span-1">
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-surface-container-high shadow-sm h-full flex flex-col">
+<h3 class="text-body-lg font-body-lg font-semibold text-on-surface mb-4">Exportar Dados</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6 flex-1">Gere relatórios detalhados das suas contas a pagar para enviar ao seu contador ou manter em seus registros.</p>
+<div class="flex flex-col gap-3 mt-auto">
+<button class="w-full flex items-center justify-center gap-2 bg-secondary-container text-on-secondary-container hover:opacity-90 font-label-sm text-label-sm font-semibold py-3 px-4 rounded-full transition-opacity shadow-sm">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+                            Exportar como CSV
+                        </button>
+<button class="w-full flex items-center justify-center gap-2 bg-transparent border-2 border-primary text-primary hover:bg-surface-container-low font-label-sm text-label-sm font-semibold py-3 px-4 rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="picture_as_pdf">picture_as_pdf</span>
+                            Baixar PDF
+                        </button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Bottom Nav Bar (Mobile Only as per Semantic Shell Mandate) -->
+<nav class="md:hidden flex justify-around items-center py-3 px-6 bg-primary dark:bg-primary-container text-secondary dark:text-secondary-fixed fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-full z-50 backdrop-blur-xl border border-white/10 shadow-xl">
+<a class="flex items-center justify-center text-white/60 dark:text-on-primary-container w-12 h-12 hover:text-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+</a>
+<a class="flex items-center justify-center text-white/60 dark:text-on-primary-container w-12 h-12 hover:text-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="bar_chart">bar_chart</span>
+</a>
+<a class="flex items-center justify-center text-white/60 dark:text-on-primary-container w-12 h-12 hover:text-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="add_box">add_box</span>
+</a>
+<a class="flex items-center justify-center bg-white dark:bg-secondary-container text-primary dark:text-on-secondary-container rounded-full w-12 h-12 scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+</a>
+<a class="flex items-center justify-center text-white/60 dark:text-on-primary-container w-12 h-12 hover:text-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</a>
+</nav>
+</body></html>

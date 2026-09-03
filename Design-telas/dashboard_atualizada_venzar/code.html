@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Venzar Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#234e41",
+                        "surface-container-high": "#e6e8ea",
+                        "surface": "#f7f9fb",
+                        "on-error": "#ffffff",
+                        "primary": "#002018",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "inverse-primary": "#a2d0bf",
+                        "primary-container": "#06372b",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#191c1e",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#4b6d00",
+                        "on-background": "#191c1e",
+                        "on-primary-fixed": "#002118",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "surface-bright": "#f7f9fb",
+                        "background": "#f7f9fb",
+                        "primary-fixed": "#beeddb",
+                        "secondary": "#476800",
+                        "outline-variant": "#c0c8c3",
+                        "on-secondary-fixed-variant": "#354e00",
+                        "surface-dim": "#d8dadc",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#a2d0bf",
+                        "surface-variant": "#e0e3e5",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#bcf063",
+                        "secondary-fixed-dim": "#a4d64c",
+                        "tertiary": "#191b1c",
+                        "secondary-fixed": "#bff365",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-surface-variant": "#414845",
+                        "on-secondary-fixed": "#131f00",
+                        "surface-container": "#eceef0",
+                        "tertiary-container": "#2e3030",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "surface-tint": "#3b6758",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary-container": "#74a191",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#969898",
+                        "on-primary": "#ffffff",
+                        "outline": "#717975",
+                        "inverse-surface": "#2d3133",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-fixed": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem"
+                    },
+                    "spacing": {
+                        "base-unit": "4px",
+                        "container-padding-mobile": "20px",
+                        "stack-gap-md": "16px",
+                        "grid-gutter": "16px",
+                        "stack-gap-lg": "24px",
+                        "container-padding-desktop": "40px",
+                        "stack-gap-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Geist"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "label-sm": ["Geist"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "balance-xl": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-sm": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "balance-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    
+    /* Custom clip path for the wallet card top indent */
+    .wallet-card-clip {
+        clip-path: polygon(
+            0% 0%, 
+            25% 0%, 
+            30% 12px, 
+            70% 12px, 
+            75% 0%, 
+            100% 0%, 
+            100% 100%, 
+            0% 100%
+        );
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-24 md:pb-0 overflow-x-hidden bg-gradient-to-br from-[#e6f4ef] to-[#f7f9fb]">
+<!-- TopAppBar Desktop -->
+<header class="fixed top-0 z-50 w-full bg-transparent flex justify-between items-center px-container-padding-mobile py-4 hidden md:flex">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-headline-md">menu</span>
+</button>
+<h1 class="text-headline-md font-headline-md font-bold tracking-tight text-primary">venzer.</h1>
+</div>
+<div>
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="A close-up portrait of a professional man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCipxedIRTa7Bz77cqtdjrNce9R1PjO6_LAmcFP0upgMKu-YCKqkMUVF4bn4Jubqyxcb7QPBKBv5rtOZhDf78nYR3bIzWTUvSLJZhK2vUy4ABfgDX0S3VPs-tAiIclyPHAB5koH1eOwzZ5ugZkyTV9D7G9zzLFS45zPzh9nXII5amTisPJeIFrB4KpFA152DIYOmD9oYqMi_klVK5qomxeC91KFzPfEIjRXoJUQ24NkgeBWI4lianyMgg"/>
+</div>
+</header>
+<!-- TopAppBar Mobile -->
+<header class="w-full flex justify-between items-center px-container-padding-mobile py-6 md:hidden">
+<div class="flex items-center gap-4">
+<h1 class="text-headline-md font-headline-md font-bold tracking-tight text-primary">venzer.</h1>
+</div>
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="A close-up portrait of a professional man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgArvH3UlV4fR_De9ytwMgbLxvMNkUC0B_bb7v9YO6_jZ2Gm6m6o7FuD3o2f2-kG0VOrQ1wQ4Dv9nj2Vh53QoShJvF65c5tl6I3oyHq5Fz52LZkxxkHYBQbwxsPAc4-vHtYujnw_pBnqCj_f9wTgJjA0qR9RzfarUADsyixZT7F7g86jsLv220DbPhkmOZcj9cmocOxmFx9slcQiOw83fxGStuJN49AC9xX1tljcI6wrqUB7oWVh95EQ"/>
+</div>
+</header>
+<!-- Main Content -->
+<main class="md:pt-24 px-container-padding-mobile max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-grid-gutter pb-6">
+<!-- Dashboard Left Column -->
+<div class="md:col-span-8 flex flex-col gap-6">
+<!-- Welcome Header -->
+<div class="mb-2">
+<p class="font-body-md text-on-surface-variant">Hi Jon Snow,</p>
+<h2 class="text-[36px] leading-[42px] font-balance-xl text-primary mt-1">Welcome Back!</h2>
+<p class="font-label-sm text-on-surface-variant mt-2 opacity-80">Here's your latest account overview</p>
+</div>
+<!-- Detailed Wallet Card -->
+<section class="bg-primary-container rounded-[32px] p-2 text-on-primary shadow-xl relative overflow-hidden">
+<!-- Inner Card Design -->
+<div class="bg-primary-container rounded-t-[28px] rounded-b-[30px] overflow-hidden relative">
+<!-- Light Green Top Section -->
+<div class="bg-[#c2ed7c] text-primary p-6 pt-5 pb-8 relative wallet-card-clip">
+<div class="flex justify-between items-start mb-6">
+<span class="font-body-md font-medium">Jon Snow</span>
+<span class="font-headline-md italic font-bold">PayPal</span>
+</div>
+<div class="flex justify-between items-end mt-4">
+<span class="font-body-md tracking-widest font-medium">**** 0849</span>
+<span class="font-headline-md font-bold text-[22px] tracking-wider">VISA</span>
+</div>
+</div>
+<!-- Dark Green Bottom Section with Balance -->
+<div class="bg-primary-container pt-8 pb-6 px-6 text-center relative -mt-4 rounded-t-[24px]">
+<div class="w-8 h-8 rounded-full bg-[#c2ed7c] text-primary flex items-center justify-center mx-auto mb-2 z-10 relative">
+<span class="material-symbols-outlined text-[18px]">attach_money</span>
+</div>
+<h2 class="text-[32px] md:text-balance-xl font-balance-xl tracking-tight text-white flex justify-center items-start gap-1">
+<span class="text-xl mt-2 text-[#c2ed7c]">$</span>4,309,573.02
+                        </h2>
+<p class="font-label-caps text-label-caps text-on-primary-container capitalize tracking-normal mt-1 mb-4">Total Balance</p>
+<!-- Dots indicator -->
+<div class="flex justify-center gap-1.5 absolute top-2 left-1/2 -translate-x-1/2">
+<div class="w-1.5 h-1.5 rounded-full bg-white"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-white/30"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-white/30"></div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex gap-3 px-4 pb-4">
+<button class="flex-1 bg-primary border border-white/10 text-white font-label-sm text-label-sm py-3.5 rounded-[16px] hover:bg-primary/80 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                        Deposit
+                    </button>
+<button class="flex-1 bg-white text-primary font-label-sm text-label-sm py-3.5 rounded-[16px] hover:bg-white/90 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">upload</span>
+                        Send
+                    </button>
+</div>
+</section>
+<!-- Bento Grid Stats -->
+<section class="grid grid-cols-2 gap-4">
+<!-- Expenses Card -->
+<div class="bg-white rounded-3xl p-5 shadow-sm flex flex-col justify-between h-[160px]">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-[#e6f4ef] text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">attach_money</span>
+</div>
+<span class="font-label-sm text-label-sm font-medium">Expenses</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">arrow_outward</span>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<p class="font-balance-xl text-[28px] text-primary font-bold"><span class="text-lg text-on-surface-variant/60 font-normal">$</span>4,570</p>
+<span class="inline-flex items-center bg-[#e6f4ef] text-[#354e00] text-[10px] font-bold px-1.5 py-0.5 rounded-sm">
+<span class="material-symbols-outlined text-[10px] mr-0.5">trending_up</span>27%
+                                </span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant/60">This Month</p>
+</div>
+</div>
+<!-- Recent Transaction Card -->
+<div class="bg-white rounded-3xl p-5 shadow-sm flex flex-col justify-between h-[160px]">
+<p class="font-label-sm text-label-sm font-medium mb-4">Recent Transaction</p>
+<div class="mt-auto">
+<p class="font-label-sm text-label-sm text-on-surface-variant/60 mb-2">Direct Bank</p>
+<div class="flex items-center justify-between">
+<div class="flex -space-x-2">
+<img class="w-8 h-8 rounded-full border-2 border-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCipxedIRTa7Bz77cqtdjrNce9R1PjO6_LAmcFP0upgMKu-YCKqkMUVF4bn4Jubqyxcb7QPBKBv5rtOZhDf78nYR3bIzWTUvSLJZhK2vUy4ABfgDX0S3VPs-tAiIclyPHAB5koH1eOwzZ5ugZkyTV9D7G9zzLFS45zPzh9nXII5amTisPJeIFrB4KpFA152DIYOmD9oYqMi_klVK5qomxeC91KFzPfEIjRXoJUQ24NkgeBWI4lianyMgg"/>
+<img class="w-8 h-8 rounded-full border-2 border-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgArvH3UlV4fR_De9ytwMgbLxvMNkUC0B_bb7v9YO6_jZ2Gm6m6o7FuD3o2f2-kG0VOrQ1wQ4Dv9nj2Vh53QoShJvF65c5tl6I3oyHq5Fz52LZkxxkHYBQbwxsPAc4-vHtYujnw_pBnqCj_f9wTgJjA0qR9RzfarUADsyixZT7F7g86jsLv220DbPhkmOZcj9cmocOxmFx9slcQiOw83fxGStuJN49AC9xX1tljcI6wrqUB7oWVh95EQ"/>
+</div>
+<button class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Dashboard Right Column (Activity) -->
+<div class="md:col-span-4 flex flex-col gap-stack-gap-md hidden md:flex">
+<div class="flex justify-between items-center mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Atividade Recente</h3>
+<button class="font-label-sm text-label-sm text-primary hover:underline">Ver tudo</button>
+</div>
+<div class="bg-surface rounded-xl border border-outline-variant/30 divide-y divide-outline-variant/20 shadow-sm">
+<!-- Transaction 1 -->
+<div class="flex items-center gap-4 p-4 hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<div class="flex-1">
+<p class="font-body-md text-body-md font-semibold text-on-surface">Mercado Local</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Alimentação • Hoje, 14:30</p>
+</div>
+<div class="text-right">
+<p class="font-body-md text-body-md font-semibold text-on-surface">- R$ 150,00</p>
+</div>
+</div>
+<!-- Transaction 2 -->
+<div class="flex items-center gap-4 p-4 hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">arrow_downward</span>
+</div>
+<div class="flex-1">
+<p class="font-body-md text-body-md font-semibold text-on-surface">Pix Recebido</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Transferência • Ontem</p>
+</div>
+<div class="text-right">
+<p class="font-body-md text-body-md font-semibold text-secondary">+ R$ 500,00</p>
+</div>
+</div>
+<!-- Transaction 3 -->
+<div class="flex items-center gap-4 p-4 hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">directions_car</span>
+</div>
+<div class="flex-1">
+<p class="font-body-md text-body-md font-semibold text-on-surface">Uber</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Transporte • 12 Out</p>
+</div>
+<div class="text-right">
+<p class="font-body-md text-body-md font-semibold text-on-surface">- R$ 32,50</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-primary-container fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-full z-50 shadow-2xl flex justify-around items-center py-2 px-4">
+<!-- Active: Home -->
+<button class="flex flex-col items-center justify-center bg-white text-primary rounded-full w-[60px] h-[48px] transition-all duration-200">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">home</span>
+</button>
+<!-- Inactive -->
+<button class="flex flex-col items-center justify-center text-white/70 w-12 h-12 hover:text-white transition-colors">
+<span class="material-symbols-outlined">candlestick_chart</span>
+</button>
+<button class="flex flex-col items-center justify-center text-white/70 w-12 h-12 hover:text-white transition-colors">
+<span class="material-symbols-outlined">pie_chart</span>
+</button>
+<button class="flex flex-col items-center justify-center text-white/70 w-12 h-12 hover:text-white transition-colors">
+<span class="material-symbols-outlined">hexagon</span>
+</button>
+</nav>
+</body></html>
